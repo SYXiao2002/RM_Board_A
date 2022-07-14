@@ -1,0 +1,3 @@
+/Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/CMakeFiles/RM_Board_A.elf.dir
+/Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/CMakeFiles/rebuild_cache.dir
