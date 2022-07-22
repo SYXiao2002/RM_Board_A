@@ -18,9 +18,14 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
+#include "dma.h"
+#include "usart.h"
+#include "gpio.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
+#include "remote_control.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -35,6 +40,7 @@
 /* Private macro -------------------------------------------------------------*/
 /* USER CODE BEGIN PM */
 
+
 /* USER CODE END PM */
 
 /* Private variables ---------------------------------------------------------*/
@@ -45,14 +51,15 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
-static void MX_GPIO_Init(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
-
+const RC_ctrl_t *local_rc_ctrl;
 /* USER CODE END PFP */
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 #include "LEDs_onboard.h"
+#include "remote_control.h"
 /* USER CODE END 0 */
 
 /**
@@ -83,10 +90,21 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_DMA_Init();
+  MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
-  //uint16_t
+  remote_control_init();
+//  local_rc_ctrl = get_remote_control_point();
   /* USER CODE END 2 */
 
+  /* Init scheduler */
+  osKernelInitialize();  /* Call init function for freertos objects (in freertos.c) */
+  MX_FREERTOS_Init();
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
@@ -94,7 +112,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    ShowWaterful();
   }
   /* USER CODE END 3 */
 }
@@ -140,36 +157,30 @@ void SystemClock_Config(void)
   }
 }
 
-/**
-  * @brief GPIO Initialization Function
-  * @param None
-  * @retval None
-  */
-static void MX_GPIO_Init(void)
-{
-  GPIO_InitTypeDef GPIO_InitStruct = {0};
-
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOG_CLK_ENABLE();
-
-  /*Configure GPIO pin Output Level */
-  HAL_GPIO_WritePin(GPIOG, LED_onboard_A_Pin|LED_onboard_B_Pin|LED_onboard_C_Pin|LED_onboard_D_Pin
-                          |LED_onboard_E_Pin|LED_onboard_F_Pin|LED_onboard_G_Pin|LED_onboard_H_Pin, GPIO_PIN_RESET);
-
-  /*Configure GPIO pins : LED_onboard_A_Pin LED_onboard_B_Pin LED_onboard_C_Pin LED_onboard_D_Pin
-                           LED_onboard_E_Pin LED_onboard_F_Pin LED_onboard_G_Pin LED_onboard_H_Pin */
-  GPIO_InitStruct.Pin = LED_onboard_A_Pin|LED_onboard_B_Pin|LED_onboard_C_Pin|LED_onboard_D_Pin
-                          |LED_onboard_E_Pin|LED_onboard_F_Pin|LED_onboard_G_Pin|LED_onboard_H_Pin;
-  GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_OD;
-  GPIO_InitStruct.Pull = GPIO_PULLUP;
-  GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
-  HAL_GPIO_Init(GPIOG, &GPIO_InitStruct);
-
-}
-
 /* USER CODE BEGIN 4 */
 
 /* USER CODE END 4 */
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM1 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM1) {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

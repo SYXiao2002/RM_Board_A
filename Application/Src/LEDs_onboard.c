@@ -4,11 +4,8 @@
 
 #include "stm32f4xx_hal.h"
 #include "LEDs_onboard.h"
+#include "remote_control.h"
 #include "main.h"
-
-#define LEDs_onboard_GPIO_Port GPIOG
-#define LEDs_onboard_NUM 8                      //the number of all diodes onboard
-#define LEDs_onboard_interval 200               //the time interval
 
 uint16_t DIODE_Pins[LEDs_onboard_NUM]={
         LED_onboard_A_Pin,
@@ -23,10 +20,11 @@ uint16_t DIODE_Pins[LEDs_onboard_NUM]={
 
 void ShowWaterful(){
     for (int i=0; i<LEDs_onboard_NUM;i++){
-        HAL_Delay(LEDs_onboard_interval);
         HAL_GPIO_TogglePin(LEDs_onboard_GPIO_Port, DIODE_Pins[i]);
+        HAL_Delay(LEDs_onboard_interval);
     }
     SwitchOffAllLEDs_onboard();
+    HAL_Delay(LEDs_onboard_interval);
 }
 
 void SwitchOffAllLEDs_onboard(){
@@ -39,4 +37,21 @@ void SwitchOnAllLEDs_onboard(){
     for (int i=0; i<LEDs_onboard_NUM;i++){
         HAL_GPIO_WritePin(LEDs_onboard_GPIO_Port, DIODE_Pins[i], GPIO_PIN_RESET);
     }
+}
+
+void RC_SwitchLED(){
+    switch(rc_ctrl.rc.s[0]){
+        case RC_SW_UP:
+            SwitchOffAllLEDs_onboard();
+            break;
+        case RC_SW_MID:
+            SwitchOnAllLEDs_onboard();
+            break;
+        case RC_SW_DOWN:
+            SwitchOffAllLEDs_onboard();
+            break;
+        default :
+            ShowWaterful();
+    }
+
 }

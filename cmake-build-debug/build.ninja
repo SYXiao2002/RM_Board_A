@@ -50,232 +50,412 @@ cmake_ninja_workdir = /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/
 build cmake_object_order_depends_target_RM_Board_A.elf: phony || CMakeFiles/RM_Board_A.elf.dir
 
 build CMakeFiles/RM_Board_A.elf.dir/Application/Src/LEDs_onboard.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Application/Src/LEDs_onboard.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Application/Src/LEDs_onboard.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Application/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
+build CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Application/Src/remote_control.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Application/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Bsp/bsp_rc.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Bsp
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/dma.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/freertos.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/gpio.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/main.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/stm32f4xx_hal_msp.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/stm32f4xx_hal_timebase_tim.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/stm32f4xx_it.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/syscalls.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/sysmem.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/system_stm32f4xx.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Src/usart.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj: ASM_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Core/Startup/startup_stm32f427iihx.s || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -x assembler-with-cpp -Og -g
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Core/Startup
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
 build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c || cmake_object_order_depends_target_RM_Board_A.elf
-  DEFINES = -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
   DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj.d
-  FLAGS = -g -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
-  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/croutine.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/list.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/queue.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/tasks.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
+  TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
+  TARGET_PDB = RM_Board_A.elf.pdb
+
+build CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj: C_COMPILER__RM_Board_A.2eelf_Debug /Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/timers.c || cmake_object_order_depends_target_RM_Board_A.elf
+  DEFINES = -DARM_MATH_CM4 -DARM_MATH_MATRIX_CHECK -DARM_MATH_ROUNDING -DDEBUG -DSTM32F427xx -DUSE_HAL_DRIVER
+  DEP_FILE = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj.d
+  FLAGS = -g -mfloat-abi=hard -mfpu=fpv4-sp-d16 -mcpu=cortex-m4 -mthumb -mthumb-interwork -ffunction-sections -fdata-sections -fno-common -fmessage-length=0 -Og -g -std=gnu11
+  INCLUDES = -I/Users/shenyixiao/Repo/RM_Board_A/Core/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Device/ST/STM32F4xx/Include -I/Users/shenyixiao/Repo/RM_Board_A/Drivers/CMSIS/Include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/include -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2 -I/Users/shenyixiao/Repo/RM_Board_A/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F -I/Users/shenyixiao/Repo/RM_Board_A/Application/Inc -I/Users/shenyixiao/Repo/RM_Board_A/Bsp
+  OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
+  OBJECT_FILE_DIR = CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source
   TARGET_COMPILE_PDB = CMakeFiles/RM_Board_A.elf.dir/
   TARGET_PDB = RM_Board_A.elf.pdb
 
@@ -287,9 +467,9 @@ build CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_h
 #############################################
 # Link the executable RM_Board_A.elf
 
-build RM_Board_A.elf: C_EXECUTABLE_LINKER__RM_Board_A.2eelf_Debug CMakeFiles/RM_Board_A.elf.dir/Application/Src/LEDs_onboard.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+build RM_Board_A.elf: C_EXECUTABLE_LINKER__RM_Board_A.2eelf_Debug CMakeFiles/RM_Board_A.elf.dir/Application/Src/LEDs_onboard.c.obj CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/croutine.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/event_groups.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/stream_buffer.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
   FLAGS = -g
-  LINK_FLAGS = -Wl,-gc-sections,--print-memory-usage,-Map=/Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.map -mcpu=cortex-m4 -mthumb -mthumb-interwork -T /Users/shenyixiao/Repo/RM_Board_A/STM32F427IIHX_FLASH.ld
+  LINK_FLAGS = -mfloat-abi=hard -mfpu=fpv4-sp-d16 -Wl,-gc-sections,--print-memory-usage,-Map=/Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.map -mcpu=cortex-m4 -mthumb -mthumb-interwork -T /Users/shenyixiao/Repo/RM_Board_A/STM32F427IIHX_FLASH.ld
   OBJECT_DIR = CMakeFiles/RM_Board_A.elf.dir
   POST_BUILD = cd /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug && arm-none-eabi-objcopy -Oihex /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.elf /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.hex && arm-none-eabi-objcopy -Obinary /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.elf /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug/RM_Board_A.bin
   PRE_LINK = :
