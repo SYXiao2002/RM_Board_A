@@ -53,11 +53,12 @@ void BusFault_Handler(void);
 void UsageFault_Handler(void);
 void DebugMon_Handler(void);
 void EXTI0_IRQHandler(void);
+void CAN1_RX0_IRQHandler(void);
 void TIM1_UP_TIM10_IRQHandler(void);
 void USART1_IRQHandler(void);
 void DMA2_Stream2_IRQHandler(void);
+void OTG_FS_IRQHandler(void);
 /* USER CODE BEGIN EFP */
-
 /* USER CODE END EFP */
 
 #ifdef __cplusplus

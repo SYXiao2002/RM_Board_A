@@ -75,20 +75,16 @@ const RC_ctrl_t *get_remote_control_point(void)
 }
 
 
-void USART1_IRQHandler(void)
+void USART1_IRQHandler_SUB(void)
 {
-    if(huart1.Instance->SR & UART_FLAG_RXNE)
-    {
+    if(huart1.Instance->SR & UART_FLAG_RXNE){
         __HAL_UART_CLEAR_PEFLAG(&huart1);
-    }
-    else if(USART1->SR & UART_FLAG_IDLE)
-    {
+    }else if(USART1->SR & UART_FLAG_IDLE){
         static uint16_t this_time_rx_len = 0;
 
         __HAL_UART_CLEAR_PEFLAG(&huart1);
 
-        if ((hdma_usart1_rx.Instance->CR & DMA_SxCR_CT) == RESET)
-        {
+        if ((hdma_usart1_rx.Instance->CR & DMA_SxCR_CT) == RESET){
             /* Current memory buffer used is Memory 0 */
     
             //disable DMA
@@ -106,13 +102,10 @@ void USART1_IRQHandler(void)
             //enable DMA
             __HAL_DMA_ENABLE(&hdma_usart1_rx);
 
-            if(this_time_rx_len == RC_FRAME_LENGTH)
-            {
+            if(this_time_rx_len == RC_FRAME_LENGTH){
                 sbus_to_rc(sbus_rx_buf[0], &rc_ctrl);
             }
-        }
-        else
-        {
+        }else{
             /* Current memory buffer used is Memory 1 */
             //disable DMA
             __HAL_DMA_DISABLE(&hdma_usart1_rx);
@@ -129,8 +122,7 @@ void USART1_IRQHandler(void)
             //enable DMA
             __HAL_DMA_ENABLE(&hdma_usart1_rx);
 
-            if(this_time_rx_len == RC_FRAME_LENGTH)
-            {
+            if(this_time_rx_len == RC_FRAME_LENGTH){
                 sbus_to_rc(sbus_rx_buf[1], &rc_ctrl);
             }
         }

@@ -25,8 +25,9 @@
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-#include "remote_control.h"
 #include "LEDs_onboard.h"
+#include "user_pid.h"
+#include "usbd_cdc_if.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -46,7 +47,6 @@
 
 /* Private variables ---------------------------------------------------------*/
 /* USER CODE BEGIN Variables */
-
 /* USER CODE END Variables */
 /* Definitions for BlinkTask_A */
 osThreadId_t BlinkTask_AHandle;
@@ -71,6 +71,7 @@ const osThreadAttr_t BlinkTask_B_attributes = {
 void Task_blink_A(void *argument);
 void Task_blink_B(void *argument);
 
+extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
 /**
@@ -125,12 +126,15 @@ void MX_FREERTOS_Init(void) {
 /* USER CODE END Header_Task_blink_A */
 void Task_blink_A(void *argument)
 {
+  /* init code for USB_DEVICE */
+  MX_USB_DEVICE_Init();
+
   /* USER CODE BEGIN Task_blink_A */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
-    RC_SwitchLED();
+      LEDs_CTRL_Events(ALLOff);
   }
   /* USER CODE END Task_blink_A */
 }
@@ -149,7 +153,6 @@ void Task_blink_B(void *argument)
   for(;;)
   {
     osDelay(1);
-
   }
   /* USER CODE END Task_blink_B */
 }

@@ -1,44 +1,33 @@
-//兼容A板&C板
-//引脚定义图应可调
-
 #define USING_RM_BOARD_A
 //#define USING_RM_BOARD_C
 
 #ifdef USING_RM_BOARD_A
-#define MICRO-SWITCH_YAW_ZERO_PORT PORTA
-#define MICRO-SWITCH_YAW_ZERO_Pin GPIO8
-#define MICRO-SWITCH_YAW_MAX_PORT PORTA
-#define MICRO-SWITCH_YAW_MAX_Pin GPIO9
+    #define MICRO-SWITCH_YAW_ZERO_PORT PORTA
+    #define MICRO-SWITCH_YAW_ZERO_Pin GPIO8
+    #define MICRO-SWITCH_YAW_MAX_PORT PORTA
+    #define MICRO-SWITCH_YAW_MAX_Pin GPIO9
 #endif
 
-#ifndef USING_RM_BOARD_C
-#define MICRO-SWITCH_YAW_ZERO_PORT PORTA
-#define MICRO-SWITCH_YAW_ZERO_Pin GPIO8
-#define MICRO-SWITCH_YAW_MAX_PORT PORTA
-#define MICRO-SWITCH_YAW_MAX_Pin GPIO9
+#ifdef USING_RM_BOARD_C
+    #define MICRO-SWITCH_YAW_ZERO_PORT PORTA
+    #define MICRO-SWITCH_YAW_ZERO_Pin GPIO8
+    #define MICRO-SWITCH_YAW_MAX_PORT PORTA
+    #define MICRO-SWITCH_YAW_MAX_Pin GPIO9
 #endif
 
 
-struct TorpedoCurrentStatus_T{
-	int temp;	//current room temperature
-	int humid;	//current room humidity
-	double yaw_42stepper_pulse;
-	double pitch_42stepper_pulse;
-	double pushing_2006motor_can1;
-	double left_3508motor_can1;
-	double right_3508motor_can1;
-}torpedo_current_status;
 
-
-
-struct TorpedoLaunchingParameters_T{
-	int temp;	//target room temperature
-	int humid;	//target room humidity
-	double yaw_stepper_pulse;
-	double pitch_stepper_pulse;
-	double left_wheel_3508_can1;
-	double right_wheel_3508_can1;
-}torpedo_launching_para;
+//This struct is the possible launching parameters for each torpedo
+//may be written into the flash (or, SD card) area on by one
+//and can be read via torpedo index for subtle launching, or targeting
+typedef struct{
+    int torpedo_idx;                    //the index of torpedo
+	int temp;                           //the room temperature while calibrating
+	int humid;                          //the humidity while calibrating
+	double yaw_42stepper_pulse;         //the absolute position of YAW axis
+	double pitch_42stepper_pulse;       //the absolute position of PITCH axis
+	double rpm_3508motor_can1;          //the rotating speed of two 3508 motors
+}__attribute__((packed)) Torpedo_LaunchingParameters_T;
 
 
 微动micro-switch

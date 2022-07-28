@@ -101,4 +101,5 @@ extern void remote_control_init(void);
   */
 extern const RC_ctrl_t *get_remote_control_point(void);
 extern RC_ctrl_t rc_ctrl;
+extern void USART1_IRQHandler_SUB(void);
 #endif

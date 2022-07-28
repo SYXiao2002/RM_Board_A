@@ -57,11 +57,23 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define CAN1_RX_Pin GPIO_PIN_0
+#define CAN1_RX_GPIO_Port GPIOD
+#define CAN1_TX_Pin GPIO_PIN_1
+#define CAN1_TX_GPIO_Port GPIOD
 #define KEY_yaw_Pin GPIO_PIN_0
 #define KEY_yaw_GPIO_Port GPIOI
 #define KEY_yaw_EXTI_IRQn EXTI0_IRQn
+#define J20_24V_POWER_CTRL_Pin GPIO_PIN_2
+#define J20_24V_POWER_CTRL_GPIO_Port GPIOH
+#define J22_24V_POWER_CTRL_Pin GPIO_PIN_3
+#define J22_24V_POWER_CTRL_GPIO_Port GPIOH
+#define J19_24V_POWER_CTRL_Pin GPIO_PIN_4
+#define J19_24V_POWER_CTRL_GPIO_Port GPIOH
 #define LED_onboard_A_Pin GPIO_PIN_8
 #define LED_onboard_A_GPIO_Port GPIOG
+#define J21_24V_POWER_CTRL_Pin GPIO_PIN_5
+#define J21_24V_POWER_CTRL_GPIO_Port GPIOH
 #define LED_onboard_B_Pin GPIO_PIN_7
 #define LED_onboard_B_GPIO_Port GPIOG
 #define LED_onboard_C_Pin GPIO_PIN_6
