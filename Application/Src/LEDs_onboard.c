@@ -14,31 +14,32 @@ void LEDs_CTRL_Manually(LEDs_Id_t LED_id, LED_Status_t LED_status){
         case TOGGLE:
             HAL_GPIO_TogglePin(LEDs_onboard_GPIO_Port, LED_id);
             break;
-        case ON:
         case OFF:
-            HAL_GPIO_WritePin(LEDs_onboard_GPIO_Port, LED_id, LED_status);
+            LEDs_onboard_GPIO_Port->BSRR = LED_id;
+            break;
+        case ON:
+            LEDs_onboard_GPIO_Port->BSRR = (uint32_t)LED_id << 16U;
             break;
     }
 }
 
 /**
  * Preset display functions for LEDs, including switching them all off/on, or show waterful...
- * @param event {ALLOn, ALLOff, ShowWaterful}
+ * @param event {ALLOn, ALLOff, ALLToggle, ShowWaterful}
  */
 void LEDs_CTRL_Events(LEDs_events event){
     switch (event) {
         case ALLOn:
-            for(LEDs_Id_t temp = LED_H; temp <= LED_A; temp <<= 1) {
-                LEDs_CTRL_Manually(temp, ON);
-            }
+            LEDs_onboard_GPIO_Port->ODR=0x00000000;
             break;
         case ALLOff:
-            for(LEDs_Id_t temp = LED_H; temp <= LED_A; temp <<= 1) {
-                LEDs_CTRL_Manually(temp, OFF);
-            }
+            LEDs_onboard_GPIO_Port->ODR=~0x00000000;
+            break;
+        case ALLToggle:
+            LEDs_onboard_GPIO_Port->ODR = ~LEDs_onboard_GPIO_Port->ODR;
             break;
         case ShowWaterful:
-            for(LEDs_Id_t temp = LED_H; temp <= LED_A; temp <<= 1) {
+            for(LEDs_Id_t temp = LED_H; temp <= LED_A; temp <<= 1U) {
                 LEDs_CTRL_Manually(temp, TOGGLE);
                 osDelay(ShowWaterful_INTERVAL);
             }

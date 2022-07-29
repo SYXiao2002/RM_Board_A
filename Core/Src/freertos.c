@@ -128,13 +128,12 @@ void Task_blink_A(void *argument)
 {
   /* init code for USB_DEVICE */
   MX_USB_DEVICE_Init();
-
   /* USER CODE BEGIN Task_blink_A */
   /* Infinite loop */
   for(;;)
   {
     osDelay(1);
-      LEDs_CTRL_Events(ALLOff);
+      LEDs_CTRL_Events(ShowWaterful);
   }
   /* USER CODE END Task_blink_A */
 }
@@ -152,7 +151,9 @@ void Task_blink_B(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(1);
+    osDelay(10000);
+    LEDs_CTRL_Events(ALLOff);
+
   }
   /* USER CODE END Task_blink_B */
 }

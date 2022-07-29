@@ -4,7 +4,7 @@
 
 #ifndef RM_BOARD_A_LEDS_ONBOARD_H
 #define RM_BOARD_A_LEDS_ONBOARD_H
-#include "stm32f4xx_hal.h"
+#include "stm32f427xx.h"
 #include "GLOBAL_status.h"
 #include "remote_control.h"
 #include "main.h"
@@ -36,6 +36,7 @@ typedef enum{
 typedef enum{
     ALLOn,
     ALLOff,
+    ALLToggle,
     ShowWaterful,
 }LEDs_events;
 
