@@ -14,7 +14,7 @@
 
 #define LEDs_onboard_GPIO_Port GPIOG
 #define LEDs_onboard_NUM 8                      //the number of all diodes onboard
-#define ShowWaterful_INTERVAL 1000               //the time interval
+#define ShowWaterful_INTERVAL 400               //the time interval
 
 typedef enum{
     LED_H=LED_onboard_H_Pin,

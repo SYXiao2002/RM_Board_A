@@ -39,7 +39,7 @@ void LEDs_CTRL_Events(LEDs_events event){
             LEDs_onboard_GPIO_Port->ODR = ~LEDs_onboard_GPIO_Port->ODR;
             break;
         case ShowWaterful:
-            for(LEDs_Id_t temp = LED_H; temp <= LED_A; temp <<= 1U) {
+            for(LEDs_Id_t temp = LED_H >> 1; temp <= (LED_A >> LED_OFF_NUM); temp <<= 1U) {
                 LEDs_CTRL_Manually(temp, TOGGLE);
                 osDelay(ShowWaterful_INTERVAL);
             }

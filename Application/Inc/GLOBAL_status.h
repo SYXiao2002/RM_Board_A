@@ -9,7 +9,7 @@
  */
 #include "LEDs_onboard.h"
 void GLOBAL_All_Status_Init();
-
+extern uint8_t LED_OFF_NUM;
 
 
 

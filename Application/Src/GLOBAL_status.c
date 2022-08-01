@@ -7,8 +7,7 @@ void GLOBAL_All_Status_Init(){
 
 }
 
-
-
+uint8_t LED_OFF_NUM=2;
 
 /*
  * Global variable for LEDs_onboard unit.

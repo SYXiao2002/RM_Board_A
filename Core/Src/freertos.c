@@ -74,6 +74,23 @@ void Task_blink_B(void *argument);
 extern void MX_USB_DEVICE_Init(void);
 void MX_FREERTOS_Init(void); /* (MISRA C 2004 rule 8.1) */
 
+/* Hook prototypes */
+void configureTimerForRunTimeStats(void);
+unsigned long getRunTimeCounterValue(void);
+
+/* USER CODE BEGIN 1 */
+/* Functions needed when configGENERATE_RUN_TIME_STATS is on */
+__weak void configureTimerForRunTimeStats(void)
+{
+
+}
+
+__weak unsigned long getRunTimeCounterValue(void)
+{
+return 0;
+}
+/* USER CODE END 1 */
+
 /**
   * @brief  FreeRTOS initialization
   * @param  None
@@ -134,6 +151,7 @@ void Task_blink_A(void *argument)
   {
     osDelay(1);
       LEDs_CTRL_Events(ShowWaterful);
+      LEDs_CTRL_Events(ALLOff);
   }
   /* USER CODE END Task_blink_A */
 }
@@ -151,8 +169,7 @@ void Task_blink_B(void *argument)
   /* Infinite loop */
   for(;;)
   {
-    osDelay(10000);
-    LEDs_CTRL_Events(ALLOff);
+    osDelay(1);
 
   }
   /* USER CODE END Task_blink_B */
