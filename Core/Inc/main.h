@@ -57,6 +57,10 @@ void Error_Handler(void);
 /* USER CODE END EFP */
 
 /* Private defines -----------------------------------------------------------*/
+#define Buzzer_External_Pin GPIO_PIN_5
+#define Buzzer_External_GPIO_Port GPIOE
+#define LCD_DC_Pin GPIO_PIN_9
+#define LCD_DC_GPIO_Port GPIOB
 #define CAN1_RX_Pin GPIO_PIN_0
 #define CAN1_RX_GPIO_Port GPIOD
 #define CAN1_TX_Pin GPIO_PIN_1
@@ -88,6 +92,10 @@ void Error_Handler(void);
 #define LED_onboard_G_GPIO_Port GPIOG
 #define LED_onboard_H_Pin GPIO_PIN_1
 #define LED_onboard_H_GPIO_Port GPIOG
+#define Button_A2D_Pin GPIO_PIN_6
+#define Button_A2D_GPIO_Port GPIOA
+#define LCD_RST_Pin GPIO_PIN_10
+#define LCD_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */
 /* USER CODE END Private defines */
 

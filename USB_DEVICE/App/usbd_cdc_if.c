@@ -260,14 +260,14 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
   */
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
-    /* USER CODE BEGIN 6 */
+  /* USER CODE BEGIN 6 */
     LED_OFF_NUM = 8 - (*Buf-'0');
     usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", *Buf-'0');
 //    CDC_Transmit_FS(Buf, *Len);
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);
     return (USBD_OK);
-    /* USER CODE END 6 */
+  /* USER CODE END 6 */
 }
 
 /**

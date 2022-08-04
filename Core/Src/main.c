@@ -19,8 +19,11 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "cmsis_os.h"
+#include "adc.h"
 #include "can.h"
 #include "dma.h"
+#include "spi.h"
+#include "tim.h"
 #include "usart.h"
 #include "usb_device.h"
 #include "gpio.h"
@@ -31,6 +34,8 @@
 #include "bsp_can.h"
 #include "user_pid.h"
 #include "GLOBAL_status.h"
+#include "st7735.h"
+#include "bsp_buzzer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -96,12 +101,17 @@ int main(void)
   MX_DMA_Init();
   MX_USART1_UART_Init();
   MX_CAN1_Init();
+  MX_ADC1_Init();
+  MX_SPI1_Init();
+  MX_TIM12_Init();
   /* USER CODE BEGIN 2 */
     remote_control_init();
     can_filter_init();
     user_pid_Init();
+	ST7735_Init();
+	GLOBAL_All_Status_Init();
 
-    GLOBAL_All_Status_Init();
+	LEDs_CTRL_Events(ALLOff);
   /* USER CODE END 2 */
 
   /* Init scheduler */
@@ -114,12 +124,12 @@ int main(void)
   /* We should never get here as control is now taken by the scheduler */
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  while (1)
-  {
+    while (1)
+    {
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-  }
+    }
   /* USER CODE END 3 */
 }
 
@@ -204,11 +214,11 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
 void Error_Handler(void)
 {
   /* USER CODE BEGIN Error_Handler_Debug */
-  /* User can add his own implementation to report the HAL error return state */
-  __disable_irq();
-  while (1)
-  {
-  }
+    /* User can add his own implementation to report the HAL error return state */
+    __disable_irq();
+    while (1)
+    {
+    }
   /* USER CODE END Error_Handler_Debug */
 }
 
