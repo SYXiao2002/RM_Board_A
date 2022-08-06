@@ -1,5 +1,4 @@
 #include "st7735.h"
-#include "cmsis_os.h"
 
 static void ST7735_SetAddressWindow(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1) {
     lcd7735_sendCmd(ST7735_CASET); // Column addr set
@@ -17,8 +16,8 @@ static void ST7735_SetAddressWindow(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t 
     lcd7735_sendCmd(ST7735_RAMWR);
 }
 void ST7735_Init() {
-    LCD_RST0;
-    HAL_Delay(10);
+    LCD_RST0;               //active low
+    HAL_Delay(1000);
     LCD_RST1;
 
     ST7735_Init_Command1();
@@ -28,51 +27,49 @@ void ST7735_Init() {
 }
 void ST7735_Init_Command1(void)
 {
-    lcd7735_sendCmd(ST7735_SWRESET);		//  1: Software reset
-    HAL_Delay(150);
-    lcd7735_sendCmd(ST7735_SLPOUT);			//  2: Out of sleep mode
-    HAL_Delay(500);
-    lcd7735_sendCmd(ST7735_FRMCTR1);		//  3: Frame rate ctrl - normal mode
-    lcd7735_sendData(0x01);							//     Rate = fosc/(1x2+40) * (LINE+2C+2D)
-    lcd7735_sendData(0x2C);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendCmd(ST7735_FRMCTR2);		//  4: Frame rate control - idle mode
-    lcd7735_sendData(0x01);							//  Rate = fosc/(1x2+40) * (LINE+2C+2D)
-    lcd7735_sendData(0x2C);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendCmd(ST7735_FRMCTR3);		//  5: Frame rate ctrl - partial mode
-    lcd7735_sendData(0x01);							//     Dot inversion mode
-    lcd7735_sendData(0x2C);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendData(0x01);							//     Line inversion mode
-    lcd7735_sendData(0x2C);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendCmd(ST7735_INVCTR);			//  6: Display inversion ctrl
-    lcd7735_sendData(0x07);							//     No inversion
-    lcd7735_sendCmd(ST7735_PWCTR1);			//  7: Power control
-    lcd7735_sendData(0xA2);
-    lcd7735_sendData(0x02);							//     -4.6V
-    lcd7735_sendData(0x84);							//     AUTO mode
-    lcd7735_sendCmd(ST7735_PWCTR2);			//  8: Power control
-    lcd7735_sendData(0xC5);							//     VGH25 = 2.4C VGSEL = -10 VGH = 3 * AVDD
-    lcd7735_sendCmd(ST7735_PWCTR3);			//  9: Power control
-    lcd7735_sendData(0x0A);							//     Opamp current small
-    lcd7735_sendData(0x00);							//     Boost frequency
-    lcd7735_sendCmd(ST7735_PWCTR4);			// 10: Power control
-    lcd7735_sendData(0x8A);							//     BCLK/2, Opamp current small & Medium low
-    lcd7735_sendData(0x2A);
-    lcd7735_sendCmd(ST7735_PWCTR5);			// 11: Power control
-    lcd7735_sendData(0x8A);
-    lcd7735_sendData(0xEE);
-    lcd7735_sendCmd(ST7735_VMCTR1);			// 12: Power control
-    lcd7735_sendData(0x0E);
-    lcd7735_sendCmd(ST7735_INVOFF);			// 13: Don't invert display
-
-	lcd7735_sendCmd(ST7735_MADCTL);
-	lcd7735_sendData(ST7735_ROTATION_North);
-
-    lcd7735_sendCmd(ST7735_COLMOD);			// 15: set color mode
-    lcd7735_sendData(0x05);							//     16-bit color
+	lcd7735_sendCmd(ST7735_SWRESET);		//  1: Software reset
+	HAL_Delay(120);
+	lcd7735_sendCmd(ST7735_SLPOUT);			//  2: Out of sleep mode
+	HAL_Delay(120);
+	lcd7735_sendCmd(ST7735_FRMCTR1);		//  3: Frame rate ctrl - normal mode
+	lcd7735_sendData(0x01);							//     Rate = fosc/(1x2+40) * (LINE+2C+2D)
+	lcd7735_sendData(0x2C);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendCmd(ST7735_FRMCTR2);		//  4: Frame rate control - idle mode
+	lcd7735_sendData(0x01);							//  Rate = fosc/(1x2+40) * (LINE+2C+2D)
+	lcd7735_sendData(0x2C);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendCmd(ST7735_FRMCTR3);		//  5: Frame rate ctrl - partial mode
+	lcd7735_sendData(0x01);							//     Dot inversion mode
+	lcd7735_sendData(0x2C);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendData(0x01);							//     Line inversion mode
+	lcd7735_sendData(0x2C);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendCmd(ST7735_INVCTR);			//  6: Display inversion ctrl
+	lcd7735_sendData(0x07);							//     No inversion
+	lcd7735_sendCmd(ST7735_PWCTR1);			//  7: Power control
+	lcd7735_sendData(0xA2);
+	lcd7735_sendData(0x02);							//     -4.6V
+	lcd7735_sendData(0x84);							//     AUTO mode
+	lcd7735_sendCmd(ST7735_PWCTR2);			//  8: Power control
+	lcd7735_sendData(0xC5);							//     VGH25 = 2.4C VGSEL = -10 VGH = 3 * AVDD
+	lcd7735_sendCmd(ST7735_PWCTR3);			//  9: Power control
+	lcd7735_sendData(0x0A);							//     Opamp current small
+	lcd7735_sendData(0x00);							//     Boost frequency
+	lcd7735_sendCmd(ST7735_PWCTR4);			// 10: Power control
+	lcd7735_sendData(0x8A);							//     BCLK/2, Opamp current small & Medium low
+	lcd7735_sendData(0x2A);
+	lcd7735_sendCmd(ST7735_PWCTR5);			// 11: Power control
+	lcd7735_sendData(0x8A);
+	lcd7735_sendData(0xEE);
+	lcd7735_sendCmd(ST7735_VMCTR1);			// 12: Power control
+	lcd7735_sendData(0x0E);
+	lcd7735_sendCmd(ST7735_INVOFF);			// 13: Don't invert display
+	lcd7735_sendCmd(ST7735_MADCTL);			// 14: Memory access control (directions)
+	lcd7735_sendData(ST7735_ROTATION_North);	//     row addr/col addr, bottom to top refresh
+	lcd7735_sendCmd(ST7735_COLMOD);			// 15: set color mode
+	lcd7735_sendData(0x05);							//     16-bit color							//     16-bit color
 }
 void ST7735_Init_Command2(void)
 {
@@ -89,49 +86,62 @@ void ST7735_Init_Command2(void)
 }
 void ST7735_Init_Command3(void)
 {
-    lcd7735_sendCmd(ST7735_GMCTRP1);  //  1: Magical unicorn dust
-    lcd7735_sendData(0x02);
-    lcd7735_sendData(0x1C);
-    lcd7735_sendData(0x07);
-    lcd7735_sendData(0x12);
-    lcd7735_sendData(0x37);
-    lcd7735_sendData(0x32);
-    lcd7735_sendData(0x29);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendData(0x29);
-    lcd7735_sendData(0x25);
-    lcd7735_sendData(0x2B);
-    lcd7735_sendData(0x39);
-    lcd7735_sendData(0x00);
-    lcd7735_sendData(0x01);
-    lcd7735_sendData(0x03);
-    lcd7735_sendData(0x10);
-    lcd7735_sendCmd(ST7735_GMCTRN1);  //  2: Sparkles and rainbows
-    lcd7735_sendData(0x03);
-    lcd7735_sendData(0x1D);
-    lcd7735_sendData(0x07);
-    lcd7735_sendData(0x06);
-    lcd7735_sendData(0x2E);
-    lcd7735_sendData(0x2C);
-    lcd7735_sendData(0x29);
-    lcd7735_sendData(0x2D);
-    lcd7735_sendData(0x2E);
-    lcd7735_sendData(0x2E);
-    lcd7735_sendData(0x37);
-    lcd7735_sendData(0x3F);
-    lcd7735_sendData(0x00);
-    lcd7735_sendData(0x00);
-    lcd7735_sendData(0x02);
-    lcd7735_sendData(0x10);
-
-    lcd7735_sendCmd(ST7735_NORON);
-    HAL_Delay(10);
-    lcd7735_sendCmd(ST7735_DISPON);
-    HAL_Delay(100);
+	lcd7735_sendCmd(ST7735_GMCTRP1);  //  1: Magical unicorn dust
+	lcd7735_sendData(0x02);
+	lcd7735_sendData(0x1C);
+	lcd7735_sendData(0x07);
+	lcd7735_sendData(0x12);
+	lcd7735_sendData(0x37);
+	lcd7735_sendData(0x32);
+	lcd7735_sendData(0x29);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendData(0x29);
+	lcd7735_sendData(0x25);
+	lcd7735_sendData(0x2B);
+	lcd7735_sendData(0x39);
+	lcd7735_sendData(0x00);
+	lcd7735_sendData(0x01);
+	lcd7735_sendData(0x03);
+	lcd7735_sendData(0x10);
+	lcd7735_sendCmd(ST7735_GMCTRN1);  //  2: Sparkles and rainbows
+	lcd7735_sendData(0x03);
+	lcd7735_sendData(0x1D);
+	lcd7735_sendData(0x07);
+	lcd7735_sendData(0x06);
+	lcd7735_sendData(0x2E);
+	lcd7735_sendData(0x2C);
+	lcd7735_sendData(0x29);
+	lcd7735_sendData(0x2D);
+	lcd7735_sendData(0x2E);
+	lcd7735_sendData(0x2E);
+	lcd7735_sendData(0x37);
+	lcd7735_sendData(0x3F);
+	lcd7735_sendData(0x00);
+	lcd7735_sendData(0x00);
+	lcd7735_sendData(0x02);
+	lcd7735_sendData(0x10);
+	lcd7735_sendCmd(ST7735_NORON);
+	HAL_Delay(10);
+	lcd7735_sendCmd(ST7735_DISPON);
+	HAL_Delay(120);
 }
 
 void ST7735_Init_Command_User(void){
-
+		int time=120;
+		ST7735_FillScreen(red);
+		HAL_Delay(time);
+		ST7735_FillScreen(black);
+		HAL_Delay(time);
+		ST7735_FillScreen(green);
+		HAL_Delay(time);
+		ST7735_FillScreen(yellow);
+		HAL_Delay(time);
+		ST7735_FillScreen(blue);
+		HAL_Delay(time);
+		ST7735_FillScreen(orange);
+		HAL_Delay(time);
+		ST7735_FillScreen(cyan);
+		HAL_Delay(6000);
 }
 
 

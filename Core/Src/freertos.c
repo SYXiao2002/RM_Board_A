@@ -190,11 +190,7 @@ void Task_OLED_Display(void *argument)
 	/* Infinite loop */
 	for(;;)
 	{
-		osDelay(100);
-
-		ST7735_FillScreen(black);
-		osDelay(100);
-		ST7735_FillScreen(white);
+		osDelay(2000);
 	}
   /* USER CODE END Task_OLED_Display */
 }

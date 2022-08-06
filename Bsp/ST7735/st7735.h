@@ -21,16 +21,16 @@
 	*@input  None
 	*@retval None
 	*/
-#define LCD_RST1  HAL_GPIO_WritePin(LCD_RST_GPIO_Port, LCD_RST_Pin, GPIO_PIN_SET);
-#define LCD_RST0  HAL_GPIO_WritePin(LCD_RST_GPIO_Port, LCD_RST_Pin, GPIO_PIN_RESET);
+#define LCD_RST1  HAL_GPIO_WritePin(ST7735_RST_GPIO_Port, ST7735_RST_Pin, GPIO_PIN_SET);
+#define LCD_RST0  HAL_GPIO_WritePin(ST7735_RST_GPIO_Port, ST7735_RST_Pin, GPIO_PIN_RESET);
  
 /**
   *@brief  ST7735 DC pin control
 	*@input  None
 	*@retval None
 	*/
-#define	LCD_DC1	HAL_GPIO_WritePin(LCD_DC_GPIO_Port, LCD_DC_Pin, GPIO_PIN_SET)
-#define	LCD_DC0 HAL_GPIO_WritePin(LCD_DC_GPIO_Port, LCD_DC_Pin, GPIO_PIN_RESET)
+#define	LCD_DC1	HAL_GPIO_WritePin(ST7735_DC_GPIO_Port, ST7735_DC_Pin, GPIO_PIN_SET)
+#define	LCD_DC0 HAL_GPIO_WritePin(ST7735_DC_GPIO_Port, ST7735_DC_Pin, GPIO_PIN_RESET)
 
  
 #define ST7735_IS_160X128 1
@@ -45,24 +45,69 @@
 
 
 //Instructions for ST7735s driver
-#define ST7735_SWRESET 0x01         //Software Reset
-#define ST7735_NORON   0x13         //Normal mode (with partial-display mode off)
-#define ST7735_DISPON  0x29         //Display On
+//#define ST7735_SWRESET 0x01         //Software Reset
+//#define ST7735_NORON   0x13         //Normal mode (with partial-display mode off)
+//#define ST7735_DISPON  0x29         //Display On
+//
+//#define ST7735_SLPIN   0x10         //Sleep in & Booster Off
+//#define ST7735_SLPOUT  0x11         //Sleep Out & Booster On
+//
+//#define ST7735_INVOFF  0x20         //Display Inversion Off (Normal)
+//#define ST7735_INVON   0x21         //Display Inversion On
+//
+//#define ST7735_CASET   0x2A         //Column Address Set
+//#define ST7735_RASET   0x2B         //Row Address Set
+//
+//#define ST7735_RAMWR   0x2C         //Memory Write
+//
+//#define ST7735_MADCTL  0x36         //Memory Data Access Control
+//#define ST7735_COLMOD  0x3A         //Interface Pixel Format
 
-#define ST7735_SLPIN   0x10         //Sleep in & Booster Off
-#define ST7735_SLPOUT  0x11         //Sleep Out & Booster On
+#define ST7735_NOP     0x00
+#define ST7735_SWRESET 0x01
+#define ST7735_RDDID   0x04
+#define ST7735_RDDST   0x09
 
-#define ST7735_INVOFF  0x20         //Display Inversion Off (Normal)
-#define ST7735_INVON   0x21         //Display Inversion On
+#define ST7735_SLPIN   0x10
+#define ST7735_SLPOUT  0x11
+#define ST7735_PTLON   0x12
+#define ST7735_NORON   0x13
 
-#define ST7735_CASET   0x2A         //Column Address Set
-#define ST7735_RASET   0x2B         //Row Address Set
+#define ST7735_INVOFF  0x20
+#define ST7735_INVON   0x21
+#define ST7735_DISPOFF 0x28
+#define ST7735_DISPON  0x29
+#define ST7735_CASET   0x2A
+#define ST7735_RASET   0x2B
+#define ST7735_RAMWR   0x2C
+#define ST7735_RAMRD   0x2E
 
-#define ST7735_RAMWR   0x2C         //Memory Write
+#define ST7735_PTLAR   0x30
+#define ST7735_COLMOD  0x3A
+#define ST7735_MADCTL  0x36
 
-#define ST7735_MADCTL  0x36         //Memory Data Access Control
-#define ST7735_COLMOD  0x3A         //Interface Pixel Format
+#define ST7735_FRMCTR1 0xB1
+#define ST7735_FRMCTR2 0xB2
+#define ST7735_FRMCTR3 0xB3
+#define ST7735_INVCTR  0xB4
+#define ST7735_DISSET5 0xB6
 
+#define ST7735_PWCTR1  0xC0
+#define ST7735_PWCTR2  0xC1
+#define ST7735_PWCTR3  0xC2
+#define ST7735_PWCTR4  0xC3
+#define ST7735_PWCTR5  0xC4
+#define ST7735_VMCTR1  0xC5
+
+#define ST7735_RDID1   0xDA
+#define ST7735_RDID2   0xDB
+#define ST7735_RDID3   0xDC
+#define ST7735_RDID4   0xDD
+
+#define ST7735_PWCTR6  0xFC
+
+#define ST7735_GMCTRP1 0xE0
+#define ST7735_GMCTRN1 0xE1
 
 
 #define ST7735_FRMCTR1 0xB1
