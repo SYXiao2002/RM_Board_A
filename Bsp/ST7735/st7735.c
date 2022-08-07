@@ -28,7 +28,7 @@ void ST7735_Init() {
 void ST7735_Init_Command1(void)
 {
 	lcd7735_sendCmd(ST7735_SWRESET);		//  1: Software reset
-	HAL_Delay(120);
+	HAL_Delay(1000);
 	lcd7735_sendCmd(ST7735_SLPOUT);			//  2: Out of sleep mode
 	HAL_Delay(120);
 	lcd7735_sendCmd(ST7735_FRMCTR1);		//  3: Frame rate ctrl - normal mode
@@ -128,20 +128,25 @@ void ST7735_Init_Command3(void)
 
 void ST7735_Init_Command_User(void){
 		int time=120;
-		ST7735_FillScreen(red);
-		HAL_Delay(time);
-		ST7735_FillScreen(black);
-		HAL_Delay(time);
-		ST7735_FillScreen(green);
-		HAL_Delay(time);
-		ST7735_FillScreen(yellow);
-		HAL_Delay(time);
-		ST7735_FillScreen(blue);
-		HAL_Delay(time);
-		ST7735_FillScreen(orange);
-		HAL_Delay(time);
-		ST7735_FillScreen(cyan);
+//	ST7735_FillScreen(white);
+//		ST7735_FillScreen(red);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(black);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(green);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(yellow);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(blue);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(orange);
+//		HAL_Delay(time);
+//		ST7735_FillScreen(cyan);
 		HAL_Delay(6000);
+		ST7735_FillScreen(blue);
+		ST7735_DrawInt(0,0,1,green);
+		HAL_Delay(6000);
+
 }
 
 
@@ -248,7 +253,7 @@ void ST7735_FillScreen(ST7735_Colors_t color) {
 
 
 static void lcd7735_SPI_MOSI(uint8_t data) {
-	HAL_SPI_Transmit(&hspi1, &data,sizeof(data),0x1);
+	HAL_SPI_Transmit(&hspi1, &data,sizeof(data),0x2);
 }
 
 void lcd7735_sendCmd(uint8_t cmd) {

@@ -45,24 +45,6 @@
 
 
 //Instructions for ST7735s driver
-//#define ST7735_SWRESET 0x01         //Software Reset
-//#define ST7735_NORON   0x13         //Normal mode (with partial-display mode off)
-//#define ST7735_DISPON  0x29         //Display On
-//
-//#define ST7735_SLPIN   0x10         //Sleep in & Booster Off
-//#define ST7735_SLPOUT  0x11         //Sleep Out & Booster On
-//
-//#define ST7735_INVOFF  0x20         //Display Inversion Off (Normal)
-//#define ST7735_INVON   0x21         //Display Inversion On
-//
-//#define ST7735_CASET   0x2A         //Column Address Set
-//#define ST7735_RASET   0x2B         //Row Address Set
-//
-//#define ST7735_RAMWR   0x2C         //Memory Write
-//
-//#define ST7735_MADCTL  0x36         //Memory Data Access Control
-//#define ST7735_COLMOD  0x3A         //Interface Pixel Format
-
 #define ST7735_NOP     0x00
 #define ST7735_SWRESET 0x01
 #define ST7735_RDDID   0x04
