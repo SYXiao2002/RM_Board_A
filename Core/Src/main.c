@@ -109,10 +109,10 @@ int main(void)
 	can_filter_init();
 	user_pid_Init();
 	ST7735_Init();
+
+
+
 	GLOBAL_All_Status_Init();
-
-
-
   /* USER CODE END 2 */
 
   /* Init scheduler */

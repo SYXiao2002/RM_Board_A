@@ -190,7 +190,8 @@ void Task_OLED_Display(void *argument)
 	/* Infinite loop */
 	for(;;)
 	{
-		osDelay(2000);
+		ST7735_DrawInt(6, 0, 8-LED_OFF_NUM, green);
+		osDelay(500);
 	}
   /* USER CODE END Task_OLED_Display */
 }
@@ -209,6 +210,7 @@ void Task_Buzzer_Annoying(void *argument)
 	for(;;)
 	{
 		osDelay(2000);
+
 	}
   /* USER CODE END Task_Buzzer_Annoying */
 }

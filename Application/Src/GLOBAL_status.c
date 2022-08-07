@@ -4,8 +4,16 @@
 #include "GLOBAL_status.h"
 
 void GLOBAL_All_Status_Init(){
-
+	GLOBAL_OLED_Pre_Setting();
 }
+
+void GLOBAL_OLED_Pre_Setting(){
+	ST7735_DrawString(0, 0, "Total ", green);
+	ST7735_DrawString(7, 0, " LEDs are lighting!", green);
+}
+
+
+
 
 uint8_t LED_OFF_NUM=2;
 
