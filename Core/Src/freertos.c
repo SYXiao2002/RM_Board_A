@@ -190,8 +190,8 @@ void Task_OLED_Display(void *argument)
 	/* Infinite loop */
 	for(;;)
 	{
-		ST7735_DrawInt(6, 0, Fused_LEDs_IO.WaterfulNum, green);
-		osDelay(500);
+		ST7735_DrawInt(6, 0, (uint16_t)Fused_LEDs_IO.WaterfulNum, green);
+		ST7735_Display_Test();
 	}
   /* USER CODE END Task_OLED_Display */
 }

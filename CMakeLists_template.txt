@@ -49,7 +49,7 @@ else ()
 endif ()
 
 
-include_directories(${includes} Application/Inc Bsp Bsp/ST7735 Bsp/Buzzer_onboard Bsp/LEDs_onboard)
+include_directories(${includes} Application/Inc Bsp Bsp/BoardOLED_substitute Bsp/Buzzer_onboard Bsp/LEDs_onboard)
 
 add_definitions(${defines})
 

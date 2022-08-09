@@ -6,6 +6,7 @@
 #define RM_BOARD_A_LEDS_ONBOARD_H
 
 #include "main.h"
+#include "bsp_flash.h"
 
 typedef void (*LEDs_onboard_Init_Func)     (void);
 typedef uint8_t (*LEDs_onboard_WriteODR_Func) (uint8_t);

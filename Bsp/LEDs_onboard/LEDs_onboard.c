@@ -29,8 +29,7 @@ LEDs_onboard_IO_t Fused_LEDs_IO={
 		LEDs_onboard_WriteODR,
 		LEDs_onboard_WriteWaterfulNum,
 		LEDs_onboard_GetODR,
-		6,
-		//todo: read it initially from flash, and every time changed, write it into the flash too.
+		0,
 };
 
 LEDs_onboard_Driver_t Fused_LEDs_Display={
@@ -45,6 +44,10 @@ LEDs_onboard_Driver_t Fused_LEDs_Display={
 
 
 void LEDs_onboard_Init(){
+	uint8_t test[1];
+	flash_read(USER_FLASH_ADDRESS, (uint32_t *)test,  1);       //read one byte
+	Fused_LEDs_IO.WaterfulNum = test[0];
+	if(Fused_LEDs_IO.WaterfulNum > LEDs_onboard_NUM || Fused_LEDs_IO.WaterfulNum < 1)   Fused_LEDs_IO.WaterfulNum=4;
 	LEDs_onboard_ShowBlink();
 }
 
@@ -62,6 +65,14 @@ uint8_t LEDs_onboard_WriteWaterfulNum(uint8_t number){
 
 	Fused_LEDs_IO.WaterfulNum = number;
 	usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", Fused_LEDs_IO.WaterfulNum);
+
+	//erase the flash initially
+	flash_erase_address(USER_FLASH_ADDRESS, 1);
+
+	//write one byte to flash
+	HAL_FLASH_Unlock();
+	HAL_FLASH_Program(FLASH_TYPEPROGRAM_BYTE,USER_FLASH_ADDRESS, Fused_LEDs_IO.WaterfulNum);
+	HAL_FLASH_Lock();
 
 	return LEDs_Ok;
 }

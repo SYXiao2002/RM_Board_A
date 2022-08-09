@@ -1,5 +1,0 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -DCMAKE_C_COMPILER=/Applications/ARM/bin/arm-none-eabi-gcc -DCMAKE_CXX_COMPILER=/Applications/ARM/bin/arm-none-eabi-g++ -G Ninja -S /Users/shenyixiao/Repo/RM_Board_A -B /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug
--- Minimal optimization, debug info included
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/shenyixiao/Repo/RM_Board_A/cmake-build-debug

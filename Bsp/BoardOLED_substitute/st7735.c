@@ -1,4 +1,5 @@
 #include "st7735.h"
+#include "cmsis_os2.h"
 
 static void ST7735_SetAddressWindow(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t y1) {
 	lcd7735_sendCmd(ST7735_CASET); // Column addr set
@@ -118,10 +119,9 @@ void ST7735_Init_Command2(void)
 }
 
 void ST7735_Display_Test(void){
-	ST7735_FillScreen(black);
 	for (int i = 0; i < 10; ++i) {
-		ST7735_DrawInt(0, 0, i, green);
-		HAL_Delay(1);
+		ST7735_DrawInt(0, 12, i, green);
+		osDelay(20);
 	}
 }
 
