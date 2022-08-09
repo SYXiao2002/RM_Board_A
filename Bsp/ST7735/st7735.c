@@ -17,7 +17,7 @@ static void ST7735_SetAddressWindow(uint8_t x0, uint8_t y0, uint8_t x1, uint8_t 
 }
 void ST7735_Init() {
 	LCD_RST0;               //active low
-	HAL_Delay(1000);
+	HAL_Delay(1200);
 	LCD_RST1;
 	HAL_Delay(120);
 

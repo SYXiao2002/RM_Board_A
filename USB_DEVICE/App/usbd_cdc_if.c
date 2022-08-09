@@ -23,6 +23,7 @@
 
 /* USER CODE BEGIN INCLUDE */
 #include "GLOBAL_status.h"
+#include "LEDs_onboard.h"
 /* USER CODE END INCLUDE */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -261,10 +262,8 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
-    LED_OFF_NUM = 8 - (*Buf-'0');
-
-    usb_printf("[SYSTEM] Board temperature: %f \r\n", get_temprate() );
-//    usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", *Buf-'0');
+    Fused_LEDs_IO.WriteWaterfulNum(*Buf-'0');
+//    usb_printf("[SYSTEM] Board temperature: %f \r\n", get_temprate() );
 //    CDC_Transmit_FS(Buf, *Len);
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);

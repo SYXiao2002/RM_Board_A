@@ -11,16 +11,9 @@
 #include "bsp_adc.h"
 #include "st7735.h"
 
-
-
-
-
 void GLOBAL_All_Status_Init();
+
 void GLOBAL_OLED_Pre_Setting();
-extern uint8_t LED_OFF_NUM;
 
 
-
-
-static uint8_t get_LEDs_ODR();
 #endif //RM_BOARD_A_GLOBAL_STATUS_H

@@ -31,6 +31,7 @@
 #include "st7735.h"
 #include "support.h"
 #include "Buzzer_onboard.h"
+#include "GLOBAL_status.h"
 #define MAX_PSC                 1000
 
 #define MAX_BUZZER_PWM      20000
@@ -171,8 +172,7 @@ void Task_LED_Blink(void *argument)
 	for(;;)
 	{
 		osDelay(1);
-		LEDs_CTRL_Events(ShowWaterful);
-		LEDs_CTRL_Events(ALLOff);
+		Fused_LEDs_Display.ShowWaterful();
 	}
   /* USER CODE END Task_LED_Blink */
 }
@@ -190,7 +190,7 @@ void Task_OLED_Display(void *argument)
 	/* Infinite loop */
 	for(;;)
 	{
-		ST7735_DrawInt(6, 0, 8-LED_OFF_NUM, green);
+		ST7735_DrawInt(6, 0, Fused_LEDs_IO.WaterfulNum, green);
 		osDelay(500);
 	}
   /* USER CODE END Task_OLED_Display */

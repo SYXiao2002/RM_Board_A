@@ -55,7 +55,7 @@ include_directories(Core/Inc Drivers/STM32F4xx_HAL_Driver/Inc Drivers/STM32F4xx_
 add_definitions(-DDEBUG -DUSE_HAL_DRIVER -DSTM32F427xx)
 
 file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "Application/Src/*.c" "Bsp/*.c" "Bsp/*/*.c")
-#file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "Application/Src/*.c" "Bsp/*.c" "Bsp/ST7735/.c" "Bsp/Buzzer_onboard/.c")
+#file(GLOB_RECURSE SOURCES "Core/*.*" "Middlewares/*.*" "Drivers/*.*" "USB_DEVICE/*.*" "Application/Src/*.c" "Bsp/*.c" "Bsp/ST7735/.c" "Bsp/Buzzer/.c")
 
 set(LINKER_SCRIPT ${CMAKE_SOURCE_DIR}/STM32F427IIHX_FLASH.ld)
 

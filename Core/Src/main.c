@@ -110,8 +110,6 @@ int main(void)
 	user_pid_Init();
 	ST7735_Init();
 
-
-
 	GLOBAL_All_Status_Init();
   /* USER CODE END 2 */
 
