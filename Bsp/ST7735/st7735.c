@@ -227,7 +227,6 @@ void ST7735_FillScreen(ST7735_Colors_t color) {
 	ST7735_FillRectangle(0, 0, ST7735_WIDTH, ST7735_HEIGHT, color);
 }
 
-
 static void lcd7735_SPI_MOSI(uint8_t data) {
 	HAL_SPI_Transmit(&hspi1, &data,sizeof(data),0x1);
 }
@@ -235,6 +234,7 @@ static void lcd7735_SPI_MOSI(uint8_t data) {
 void lcd7735_sendCmd(uint8_t cmd) {
 	LCD_DC0; //Set DC LOW
 	HAL_Delay(1);
+//	for (int i = 0; i < 35000; ++i) {}
 	lcd7735_SPI_MOSI(cmd);
 }
 

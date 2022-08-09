@@ -16,6 +16,27 @@
 #define LEDs_onboard_NUM 8                      //the number of all diodes onboard
 #define ShowWaterful_INTERVAL 500               //the time interval
 
+typedef int32_t (*LEDS_onboard_Init_Func)     (void);
+typedef int32_t (*LEDS_onboard_DeInit_Func)   (void);
+typedef int32_t (*LEDS_onboard_GetTick_Func)  (void);
+typedef int32_t (*LEDS_onboard_Delay_Func)    (uint32_t);
+typedef int32_t (*LEDS_onboard_WriteReg_Func) (uint8_t, uint8_t*, uint32_t);
+typedef int32_t (*LEDS_onboard_ReadReg_Func)  (uint8_t, uint8_t*);
+typedef int32_t (*LEDS_onboard_SendData_Func) (uint8_t*, uint32_t);
+typedef int32_t (*LEDS_onboard_RecvData_Func) (uint8_t*, uint32_t);
+
+typedef struct
+{
+	LEDS_onboard_Init_Func          Init;
+	LEDS_onboard_DeInit_Func        DeInit;
+	uint16_t                  Address;
+	LEDS_onboard_WriteReg_Func      WriteReg;
+	LEDS_onboard_ReadReg_Func       ReadReg;
+	LEDS_onboard_SendData_Func      SendData;
+	LEDS_onboard_RecvData_Func      RecvData;
+	LEDS_onboard_GetTick_Func       GetTick;
+} LEDS_onboard_IO_t;
+
 typedef enum{
     LED_H=LED_onboard_H_Pin,
     LED_G=LED_onboard_G_Pin,

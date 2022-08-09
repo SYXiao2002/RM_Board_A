@@ -87,8 +87,8 @@ void Error_Handler(void);
 #define LED_onboard_G_GPIO_Port GPIOG
 #define LED_onboard_H_Pin GPIO_PIN_1
 #define LED_onboard_H_GPIO_Port GPIOG
-#define Button_A2D_Pin GPIO_PIN_6
-#define Button_A2D_GPIO_Port GPIOA
+#define Button_AD_Pin GPIO_PIN_6
+#define Button_AD_GPIO_Port GPIOA
 #define ST7735_RST_Pin GPIO_PIN_10
 #define ST7735_RST_GPIO_Port GPIOB
 /* USER CODE BEGIN Private defines */

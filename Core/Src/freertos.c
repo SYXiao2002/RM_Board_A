@@ -30,7 +30,7 @@
 #include "usbd_cdc_if.h"
 #include "st7735.h"
 #include "support.h"
-#include "bsp_buzzer.h"
+#include "Buzzer_onboard.h"
 #define MAX_PSC                 1000
 
 #define MAX_BUZZER_PWM      20000

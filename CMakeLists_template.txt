@@ -48,11 +48,13 @@ else ()
     add_compile_options(-Og -g)
 endif ()
 
-include_directories(${includes} Application/Inc Bsp Bsp/ST7735 Bsp/Buzzer)
+
+include_directories(${includes} Application/Inc Bsp Bsp/ST7735 Bsp/Buzzer_onboard Bsp/LEDs_onboard)
 
 add_definitions(${defines})
 
-file(GLOB_RECURSE SOURCES ${sources} "Application/Src/*.c" "Bsp/*.c" "Bsp/ST7735/.c" "Bsp/Buzzer/.c")
+file(GLOB_RECURSE SOURCES ${sources} "Application/Src/*.c" "Bsp/*.c" "Bsp/*/*.c")
+#file(GLOB_RECURSE SOURCES ${sources} "Application/Src/*.c" "Bsp/*.c" "Bsp/ST7735/.c" "Bsp/Buzzer/.c")
 
 set(LINKER_SCRIPT $${CMAKE_SOURCE_DIR}/${linkerScript})
 

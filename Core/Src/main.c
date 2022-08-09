@@ -35,7 +35,7 @@
 #include "user_pid.h"
 #include "GLOBAL_status.h"
 #include "st7735.h"
-#include "bsp_buzzer.h"
+#include "Buzzer_onboard.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/

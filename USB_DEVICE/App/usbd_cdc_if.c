@@ -262,7 +262,9 @@ static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
     LED_OFF_NUM = 8 - (*Buf-'0');
-    usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", *Buf-'0');
+
+    usb_printf("[SYSTEM] Board temperature: %f \r\n", get_temprate() );
+//    usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", *Buf-'0');
 //    CDC_Transmit_FS(Buf, *Len);
     USBD_CDC_SetRxBuffer(&hUsbDeviceFS, &Buf[0]);
     USBD_CDC_ReceivePacket(&hUsbDeviceFS);
