@@ -5,7 +5,6 @@
 #include "LEDs_onboard.h"
 #include "cmsis_os.h"
 #include "usbd_cdc_if.h"
-#include "GLOBAL_status.h"
 
 #define LEDs_onboard_GPIO_Port GPIOG
 #define LEDs_onboard_NUM 8                      //the number of all diodes onboard
@@ -31,6 +30,7 @@ LEDs_onboard_IO_t Fused_LEDs_IO={
 		LEDs_onboard_WriteWaterfulNum,
 		LEDs_onboard_GetODR,
 		6,
+		//todo: read it initially from flash, and every time changed, write it into the flash too.
 };
 
 LEDs_onboard_Driver_t Fused_LEDs_Display={
@@ -56,7 +56,7 @@ uint8_t LEDs_onboard_WriteODR(uint8_t Reg_ODR){
 
 uint8_t LEDs_onboard_WriteWaterfulNum(uint8_t number){
 	if(number > LEDs_onboard_NUM || number < 1){
-		usb_printf("[WARNING] Waterful Number should between 1 and 8");
+		usb_printf("[WARNING] Waterful Number should between 1 and 8\r\n");
 		return LEDs_Error;
 	}
 

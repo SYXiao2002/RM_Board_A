@@ -17,7 +17,7 @@
 
 
 /**
-  *@brief  ST7735 RST pin control
+  *@brief  BoardOLED_substitute RST pin control
 	*@input  None
 	*@retval None
 	*/
@@ -25,7 +25,7 @@
 #define LCD_RST0  HAL_GPIO_WritePin(ST7735_RST_GPIO_Port, ST7735_RST_Pin, GPIO_PIN_RESET);
  
 /**
-  *@brief  ST7735 DC pin control
+  *@brief  BoardOLED_substitute DC pin control
 	*@input  None
 	*@retval None
 	*/
@@ -44,7 +44,7 @@
 #define ST7735_ROTATION_West    (0x00 )
 
 /**
-  * @brief  ST7735 Registers
+  * @brief  BoardOLED_substitute Registers
   */
 #define ST7735_NOP                          0x00U  /* No Operation: NOP                           */
 #define ST7735_SW_RESET                     0x01U  /* Software reset: SWRESET                     */

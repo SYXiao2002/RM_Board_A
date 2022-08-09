@@ -1,11 +1,11 @@
 Archive member included to satisfy reference by file (symbol)
 
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_muldf3.o)
-                              CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj (__aeabi_dmul)
+                              CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj (__aeabi_dmul)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_addsubdf3.o)
-                              CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj (__aeabi_i2d)
+                              CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj (__aeabi_i2d)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_truncdfsf2.o)
-                              CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj (__aeabi_d2f)
+                              CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj (__aeabi_d2f)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_aeabi_uldivmod.o)
                               CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj (__aeabi_uldivmod)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_udivmoddi4.o)
@@ -141,7 +141,7 @@ Archive member included to satisfy reference by file (symbol)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a(_arm_fixdfsi.o)
                               /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libg.a(lib_a-svfprintf.o) (__aeabi_d2iz)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-w_pow.o)
-                              CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj (pow)
+                              CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj (pow)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-e_pow.o)
                               /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-w_pow.o) (__ieee754_pow)
 /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a(lib_a-e_sqrt.o)
@@ -196,6 +196,47 @@ Discarded input sections
  .text.user_pid_Calc
                 0x0000000000000000       0x78 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
  .text.shoot    0x0000000000000000       0x48 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .debug_line    0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .debug_str     0x0000000000000000      0x159 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .comment       0x0000000000000000       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .data.Font_11x18
+                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .data.Font_16x26
+                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .data.Font_7x10
+                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .rodata.Font11x18
+                0x0000000000000000      0xd5c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .rodata.Font16x26
+                0x0000000000000000     0x134c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .rodata.Font7x10
+                0x0000000000000000      0x76c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .debug_info    0x0000000000000000      0x1aa CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .debug_abbrev  0x0000000000000000       0xaa CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .debug_aranges
+                0x0000000000000000       0x18 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .debug_line    0x0000000000000000       0xeb CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .debug_str     0x0000000000000000      0x252 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .comment       0x0000000000000000       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .ARM.attributes
+                0x0000000000000000       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .text.ST7735_Display_Test
+                0x0000000000000000       0x28 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .text.ftoa     0x0000000000000000       0x80 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/Buzzer_onboard/Buzzer_onboard.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/Buzzer_onboard/Buzzer_onboard.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/Buzzer_onboard/Buzzer_onboard.c.obj
@@ -211,39 +252,6 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .data.Font_11x18
-                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .data.Font_16x26
-                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .data.Font_7x10
-                0x0000000000000000        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .rodata.Font11x18
-                0x0000000000000000      0xd5c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .rodata.Font16x26
-                0x0000000000000000     0x134c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .rodata.Font7x10
-                0x0000000000000000      0x76c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .debug_info    0x0000000000000000      0x1aa CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .debug_abbrev  0x0000000000000000       0xaa CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .debug_aranges
-                0x0000000000000000       0x18 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .debug_line    0x0000000000000000       0xdd CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .debug_str     0x0000000000000000      0x244 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .comment       0x0000000000000000       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .ARM.attributes
-                0x0000000000000000       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
- .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .text.ST7735_Display_Test
-                0x0000000000000000       0x28 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .text.ftoa     0x0000000000000000       0x80 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_adc.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_adc.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_adc.c.obj
@@ -2510,11 +2518,12 @@ LOAD CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/FiveWayButton.c.obj
+LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/fonts.c.obj
+LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/Buzzer_onboard/Buzzer_onboard.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
-LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/fonts.c.obj
-LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_adc.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
 LOAD CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
@@ -2662,9 +2671,8 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
  .text.HAL_CAN_RxFifo0MsgPendingCallback
                 0x00000000080010f0       0x84 CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
                 0x00000000080010f0                HAL_CAN_RxFifo0MsgPendingCallback
- .text.GLOBAL_OLED_Pre_Setting
+ .text.GLOBAL_OLED_Para_Display_Init
                 0x0000000008001174       0x28 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
-                0x0000000008001174                GLOBAL_OLED_Pre_Setting
  .text.GLOBAL_All_Status_Init
                 0x000000000800119c       0x14 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
                 0x000000000800119c                GLOBAL_All_Status_Init
@@ -2680,69 +2688,69 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
  .text.user_pid_Init
                 0x0000000008001370       0x6c CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
                 0x0000000008001370                user_pid_Init
- .text.LEDs_onboard_WriteODR
-                0x00000000080013dc       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_GetODR
-                0x00000000080013ec       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_AllOn
-                0x00000000080013fc        0xc CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_AllOff
-                0x0000000008001408       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_AllToggle
-                0x0000000008001418       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_WriteWaterfulNum
-                0x0000000008001428       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_ShowBlink
-                0x0000000008001458       0x22 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .text.LEDs_onboard_Init
-                0x000000000800147a        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- *fill*         0x0000000008001482        0x2 
- .text.LEDs_CTRL_Manually
-                0x0000000008001484       0x2c CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
-                0x0000000008001484                LEDs_CTRL_Manually
- .text.LEDs_onboard_ShowWaterful
-                0x00000000080014b0       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .text.lcd7735_SPI_MOSI
-                0x00000000080014e0       0x20 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
+                0x00000000080013dc       0x20 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
  .text.lcd7735_sendCmd
-                0x0000000008001500       0x24 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x0000000008001500                lcd7735_sendCmd
+                0x00000000080013fc       0x24 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x00000000080013fc                lcd7735_sendCmd
  .text.lcd7735_sendData
-                0x0000000008001524       0x1c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x0000000008001524                lcd7735_sendData
+                0x0000000008001420       0x1c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001420                lcd7735_sendData
  .text.ST7735_Init_Command1
-                0x0000000008001540       0xee CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x0000000008001540                ST7735_Init_Command1
+                0x000000000800143c       0xee CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x000000000800143c                ST7735_Init_Command1
  .text.ST7735_SetAddressWindow
-                0x000000000800162e       0x4e CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
+                0x000000000800152a       0x4e CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
  .text.ST7735_DrawPixel
-                0x000000000800167c       0x3c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x000000000800167c                ST7735_DrawPixel
+                0x0000000008001578       0x3c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001578                ST7735_DrawPixel
  .text.ST7735_FillRectangle
-                0x00000000080016b8       0x74 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x00000000080016b8                ST7735_FillRectangle
+                0x00000000080015b4       0x74 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x00000000080015b4                ST7735_FillRectangle
  .text.ST7735_DrawCharS
-                0x000000000800172c       0xd8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x000000000800172c                ST7735_DrawCharS
+                0x0000000008001628       0xd8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001628                ST7735_DrawCharS
  .text.ST7735_DrawString
-                0x0000000008001804       0x56 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x0000000008001804                ST7735_DrawString
+                0x0000000008001700       0x56 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001700                ST7735_DrawString
  .text.ST7735_DrawInt
-                0x000000000800185a       0x32 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x000000000800185a                ST7735_DrawInt
+                0x0000000008001756       0x32 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001756                ST7735_DrawInt
  .text.ST7735_FillScreen
-                0x000000000800188c       0x18 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x000000000800188c                ST7735_FillScreen
+                0x0000000008001788       0x18 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001788                ST7735_FillScreen
  .text.ST7735_Init_Command2
-                0x00000000080018a4       0xf4 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x00000000080018a4                ST7735_Init_Command2
+                0x00000000080017a0       0xf4 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x00000000080017a0                ST7735_Init_Command2
  .text.ST7735_Init
-                0x0000000008001998       0x38 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                0x0000000008001998                ST7735_Init
- .text.reverse  0x00000000080019d0       0x1c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
-                0x00000000080019d0                reverse
- .text.int2Str  0x00000000080019ec       0x4c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
-                0x00000000080019ec                int2Str
+                0x0000000008001894       0x38 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                0x0000000008001894                ST7735_Init
+ .text.reverse  0x00000000080018cc       0x1c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+                0x00000000080018cc                reverse
+ .text.int2Str  0x00000000080018e8       0x4c CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+                0x00000000080018e8                int2Str
+ .text.LEDs_onboard_WriteODR
+                0x0000000008001934       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_GetODR
+                0x0000000008001944       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_AllOn
+                0x0000000008001954        0xc CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_AllOff
+                0x0000000008001960       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_AllToggle
+                0x0000000008001970       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_WriteWaterfulNum
+                0x0000000008001980       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_ShowBlink
+                0x00000000080019b0       0x22 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .text.LEDs_onboard_Init
+                0x00000000080019d2        0x8 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ *fill*         0x00000000080019da        0x2 
+ .text.LEDs_CTRL_Manually
+                0x00000000080019dc       0x2c CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+                0x00000000080019dc                LEDs_CTRL_Manually
+ .text.LEDs_onboard_ShowWaterful
+                0x0000000008001a08       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .text.can_filter_init
                 0x0000000008001a38       0x3c CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
                 0x0000000008001a38                can_filter_init
@@ -4077,12 +4085,12 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
                 0x000000000800f728                . = ALIGN (0x4)
  *(.rodata)
  *(.rodata*)
- .rodata.GLOBAL_OLED_Pre_Setting.str1.4
+ .rodata.GLOBAL_OLED_Para_Display_Init.str1.4
                 0x000000000800f728       0x1c CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
+ .rodata.Font   0x000000000800f744      0x4fb CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ *fill*         0x000000000800fc3f        0x1 
  .rodata.LEDs_onboard_WriteWaterfulNum.str1.4
-                0x000000000800f744       0x53 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- *fill*         0x000000000800f797        0x1 
- .rodata.Font   0x000000000800f798      0x4fb CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
+                0x000000000800fc40       0x53 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  *fill*         0x000000000800fc93        0x1 
  .rodata.str1.4
                 0x000000000800fc94       0x2a CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
@@ -4549,11 +4557,11 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/c
  .ARM.attributes
                 0x00000000000000ee       0x34 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
  .ARM.attributes
-                0x0000000000000122       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+                0x0000000000000122       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
  .ARM.attributes
-                0x0000000000000156       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
+                0x0000000000000156       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
  .ARM.attributes
-                0x000000000000018a       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
+                0x000000000000018a       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .ARM.attributes
                 0x00000000000001be       0x34 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
  .ARM.attributes
@@ -4786,128 +4794,128 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-
 LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/../../../../arm-none-eabi/lib/thumb/v7e-m+fp/hard/libm.a
 LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/libgcc.a
 
-.debug_info     0x0000000000000000    0x39f45
+.debug_info     0x0000000000000000    0x39a46
  .debug_info    0x0000000000000000      0x7de CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
  .debug_info    0x00000000000007de      0x759 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
  .debug_info    0x0000000000000f37      0x833 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
  .debug_info    0x000000000000176a      0x3e1 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
- .debug_info    0x0000000000001b4b      0xaad CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_info    0x00000000000025f8     0x15f8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_info    0x0000000000003bf0      0x2c0 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .debug_info    0x0000000000003eb0      0x5b3 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
- .debug_info    0x0000000000004463      0x5d1 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
- .debug_info    0x0000000000004a34      0x3cb CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
- .debug_info    0x0000000000004dff      0xd3c CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
- .debug_info    0x0000000000005b3b      0xbc3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
- .debug_info    0x00000000000066fe      0x542 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
- .debug_info    0x0000000000006c40      0xbc0 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
- .debug_info    0x0000000000007800      0x53f CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
- .debug_info    0x0000000000007d3f     0x1330 CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
- .debug_info    0x000000000000906f      0xa8a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
- .debug_info    0x0000000000009af9      0x53e CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_info    0x000000000000a037      0xcc5 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_info    0x000000000000acfc     0x12fa CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_info    0x000000000000bff6      0x7af CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
- .debug_info    0x000000000000c7a5      0x174 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
- .debug_info    0x000000000000c919      0x554 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_info    0x000000000000ce6d      0xc68 CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
- .debug_info    0x000000000000dad5      0xd16 CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
- .debug_info    0x000000000000e7eb       0x22 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
- .debug_info    0x000000000000e80d      0xa5c CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_info    0x000000000000f269      0xee1 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_info    0x000000000001014a      0xcaa CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
- .debug_info    0x0000000000010df4     0x126e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_info    0x0000000000012062     0x10c2 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_info    0x0000000000013124      0xb3f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_info    0x0000000000013c63      0x7cc CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_info    0x000000000001442f     0x1b61 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
- .debug_info    0x0000000000015f90      0x726 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
- .debug_info    0x00000000000166b6      0xb1f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_info    0x00000000000171d5     0x1e96 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_info    0x000000000001906b     0x3d5b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_info    0x000000000001cdc6     0x1ade CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_info    0x000000000001e8a4     0x424e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_info    0x0000000000022af2     0x1f99 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
- .debug_info    0x0000000000024a8b     0x16da CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_info    0x0000000000026165     0x1223 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_info    0x0000000000027388     0x13f9 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_info    0x0000000000028781      0x8ca CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_info    0x000000000002904b     0x4b32 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_info    0x000000000002db7d      0x2e0 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_info    0x000000000002de5d      0x587 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_info    0x000000000002e3e4      0x5d9 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_info    0x000000000002e9bd     0x2826 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_info    0x00000000000311e3     0x34e4 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_info    0x00000000000346c7     0x1ac7 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_info    0x000000000003618e      0x79f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_info    0x000000000003692d     0x109e CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_info    0x00000000000379cb      0x5ff CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_info    0x0000000000037fca     0x1f7b CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_info    0x0000000000001b4b     0x15f8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_info    0x0000000000003143      0x2c0 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_info    0x0000000000003403      0x5ae CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .debug_info    0x00000000000039b1      0x5b3 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
+ .debug_info    0x0000000000003f64      0x5d1 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
+ .debug_info    0x0000000000004535      0x3cb CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
+ .debug_info    0x0000000000004900      0xd3c CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
+ .debug_info    0x000000000000563c      0xbc3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
+ .debug_info    0x00000000000061ff      0x542 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
+ .debug_info    0x0000000000006741      0xbc0 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
+ .debug_info    0x0000000000007301      0x53f CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
+ .debug_info    0x0000000000007840     0x1330 CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
+ .debug_info    0x0000000000008b70      0xa8a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
+ .debug_info    0x00000000000095fa      0x53e CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_info    0x0000000000009b38      0xcc5 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_info    0x000000000000a7fd     0x12fa CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_info    0x000000000000baf7      0x7af CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
+ .debug_info    0x000000000000c2a6      0x174 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
+ .debug_info    0x000000000000c41a      0x554 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_info    0x000000000000c96e      0xc68 CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
+ .debug_info    0x000000000000d5d6      0xd16 CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
+ .debug_info    0x000000000000e2ec       0x22 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
+ .debug_info    0x000000000000e30e      0xa5c CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_info    0x000000000000ed6a      0xee1 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_info    0x000000000000fc4b      0xcaa CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+ .debug_info    0x00000000000108f5     0x126e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_info    0x0000000000011b63     0x10c2 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_info    0x0000000000012c25      0xb3f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_info    0x0000000000013764      0x7cc CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_info    0x0000000000013f30     0x1b61 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+ .debug_info    0x0000000000015a91      0x726 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+ .debug_info    0x00000000000161b7      0xb1f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_info    0x0000000000016cd6     0x1e96 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_info    0x0000000000018b6c     0x3d5b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_info    0x000000000001c8c7     0x1ade CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_info    0x000000000001e3a5     0x424e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_info    0x00000000000225f3     0x1f99 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_info    0x000000000002458c     0x16da CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_info    0x0000000000025c66     0x1223 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_info    0x0000000000026e89     0x13f9 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_info    0x0000000000028282      0x8ca CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_info    0x0000000000028b4c     0x4b32 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_info    0x000000000002d67e      0x2e0 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_info    0x000000000002d95e      0x587 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_info    0x000000000002dee5      0x5d9 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_info    0x000000000002e4be     0x2826 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_info    0x0000000000030ce4     0x34e4 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_info    0x00000000000341c8     0x1ac7 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_info    0x0000000000035c8f      0x79f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_info    0x000000000003642e     0x109e CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_info    0x00000000000374cc      0x5ff CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_info    0x0000000000037acb     0x1f7b CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 
-.debug_abbrev   0x0000000000000000     0x7753
+.debug_abbrev   0x0000000000000000     0x7730
  .debug_abbrev  0x0000000000000000      0x213 CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
- .debug_abbrev  0x0000000000000213      0x165 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
- .debug_abbrev  0x0000000000000378      0x215 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
- .debug_abbrev  0x000000000000058d      0x10b CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
- .debug_abbrev  0x0000000000000698      0x271 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_abbrev  0x0000000000000909      0x26b CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_abbrev  0x0000000000000b74      0x11d CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .debug_abbrev  0x0000000000000c91      0x192 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
- .debug_abbrev  0x0000000000000e23      0x146 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
- .debug_abbrev  0x0000000000000f69      0x16f CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
- .debug_abbrev  0x00000000000010d8      0x1dc CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
- .debug_abbrev  0x00000000000012b4      0x1f6 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
- .debug_abbrev  0x00000000000014aa      0x126 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
- .debug_abbrev  0x00000000000015d0      0x205 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
- .debug_abbrev  0x00000000000017d5      0x14e CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
- .debug_abbrev  0x0000000000001923      0x243 CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
- .debug_abbrev  0x0000000000001b66      0x1d3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
- .debug_abbrev  0x0000000000001d39      0x119 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_abbrev  0x0000000000001e52      0x1ff CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_abbrev  0x0000000000002051      0x1ee CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_abbrev  0x000000000000223f      0x1a3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
- .debug_abbrev  0x00000000000023e2       0xe7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
- .debug_abbrev  0x00000000000024c9      0x119 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_abbrev  0x00000000000025e2      0x200 CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
- .debug_abbrev  0x00000000000027e2      0x1f6 CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
- .debug_abbrev  0x00000000000029d8       0x12 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
- .debug_abbrev  0x00000000000029ea      0x206 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_abbrev  0x0000000000002bf0      0x23a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_abbrev  0x0000000000002e2a      0x293 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
- .debug_abbrev  0x00000000000030bd      0x267 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_abbrev  0x0000000000003324      0x36a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_abbrev  0x000000000000368e      0x2c2 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_abbrev  0x0000000000003950      0x1ef CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_abbrev  0x0000000000003b3f      0x2b5 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
- .debug_abbrev  0x0000000000003df4      0x1e5 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
- .debug_abbrev  0x0000000000003fd9      0x28a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_abbrev  0x0000000000004263      0x24e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_abbrev  0x00000000000044b1      0x22b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_abbrev  0x00000000000046dc      0x241 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_abbrev  0x000000000000491d      0x2fd CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_abbrev  0x0000000000004c1a      0x2cb CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
- .debug_abbrev  0x0000000000004ee5      0x317 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_abbrev  0x00000000000051fc      0x2a8 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_abbrev  0x00000000000054a4      0x32e CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_abbrev  0x00000000000057d2      0x184 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_abbrev  0x0000000000005956      0x53a CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_abbrev  0x0000000000005e90      0x106 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_abbrev  0x0000000000005f96      0x26b CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_abbrev  0x0000000000006201      0x24b CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_abbrev  0x000000000000644c      0x369 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_abbrev  0x00000000000067b5      0x313 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_abbrev  0x0000000000006ac8      0x30c CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_abbrev  0x0000000000006dd4      0x196 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_abbrev  0x0000000000006f6a      0x34d CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_abbrev  0x00000000000072b7      0x1ca CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_abbrev  0x0000000000007481      0x2d2 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_abbrev  0x0000000000000213      0x163 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
+ .debug_abbrev  0x0000000000000376      0x215 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
+ .debug_abbrev  0x000000000000058b      0x10b CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+ .debug_abbrev  0x0000000000000696      0x26b CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_abbrev  0x0000000000000901      0x11d CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_abbrev  0x0000000000000a1e      0x250 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .debug_abbrev  0x0000000000000c6e      0x192 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
+ .debug_abbrev  0x0000000000000e00      0x146 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
+ .debug_abbrev  0x0000000000000f46      0x16f CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
+ .debug_abbrev  0x00000000000010b5      0x1dc CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
+ .debug_abbrev  0x0000000000001291      0x1f6 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
+ .debug_abbrev  0x0000000000001487      0x126 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
+ .debug_abbrev  0x00000000000015ad      0x205 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
+ .debug_abbrev  0x00000000000017b2      0x14e CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
+ .debug_abbrev  0x0000000000001900      0x243 CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
+ .debug_abbrev  0x0000000000001b43      0x1d3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
+ .debug_abbrev  0x0000000000001d16      0x119 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_abbrev  0x0000000000001e2f      0x1ff CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_abbrev  0x000000000000202e      0x1ee CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_abbrev  0x000000000000221c      0x1a3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
+ .debug_abbrev  0x00000000000023bf       0xe7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
+ .debug_abbrev  0x00000000000024a6      0x119 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_abbrev  0x00000000000025bf      0x200 CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
+ .debug_abbrev  0x00000000000027bf      0x1f6 CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
+ .debug_abbrev  0x00000000000029b5       0x12 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
+ .debug_abbrev  0x00000000000029c7      0x206 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_abbrev  0x0000000000002bcd      0x23a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_abbrev  0x0000000000002e07      0x293 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+ .debug_abbrev  0x000000000000309a      0x267 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_abbrev  0x0000000000003301      0x36a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_abbrev  0x000000000000366b      0x2c2 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_abbrev  0x000000000000392d      0x1ef CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_abbrev  0x0000000000003b1c      0x2b5 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+ .debug_abbrev  0x0000000000003dd1      0x1e5 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+ .debug_abbrev  0x0000000000003fb6      0x28a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_abbrev  0x0000000000004240      0x24e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_abbrev  0x000000000000448e      0x22b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_abbrev  0x00000000000046b9      0x241 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_abbrev  0x00000000000048fa      0x2fd CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_abbrev  0x0000000000004bf7      0x2cb CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_abbrev  0x0000000000004ec2      0x317 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_abbrev  0x00000000000051d9      0x2a8 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_abbrev  0x0000000000005481      0x32e CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_abbrev  0x00000000000057af      0x184 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_abbrev  0x0000000000005933      0x53a CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_abbrev  0x0000000000005e6d      0x106 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_abbrev  0x0000000000005f73      0x26b CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_abbrev  0x00000000000061de      0x24b CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_abbrev  0x0000000000006429      0x369 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_abbrev  0x0000000000006792      0x313 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_abbrev  0x0000000000006aa5      0x30c CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_abbrev  0x0000000000006db1      0x196 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_abbrev  0x0000000000006f47      0x34d CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_abbrev  0x0000000000007294      0x1ca CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_abbrev  0x000000000000745e      0x2d2 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 
 .debug_loc      0x0000000000000000    0x257b4
  .debug_loc     0x0000000000000000       0xb9 CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
  .debug_loc     0x00000000000000b9       0x3f CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
- .debug_loc     0x00000000000000f8      0x18e CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_loc     0x0000000000000286      0x5f8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_loc     0x000000000000087e      0x26e CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
+ .debug_loc     0x00000000000000f8      0x5f8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_loc     0x00000000000006f0      0x26e CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_loc     0x000000000000095e      0x18e CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .debug_loc     0x0000000000000aec       0x25 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
  .debug_loc     0x0000000000000b11      0x136 CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
  .debug_loc     0x0000000000000c47       0x84 CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
@@ -4961,11 +4969,11 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/l
  .debug_aranges
                 0x0000000000000098       0x30 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
  .debug_aranges
-                0x00000000000000c8       0x68 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+                0x00000000000000c8       0x88 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
  .debug_aranges
-                0x0000000000000130       0x88 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
+                0x0000000000000150       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
  .debug_aranges
-                0x00000000000001b8       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
+                0x0000000000000180       0x68 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .debug_aranges
                 0x00000000000001e8       0x20 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
  .debug_aranges
@@ -5070,9 +5078,9 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/l
  .debug_ranges  0x0000000000000028       0x18 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
  .debug_ranges  0x0000000000000040       0x28 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
  .debug_ranges  0x0000000000000068       0x20 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
- .debug_ranges  0x0000000000000088       0x58 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_ranges  0x00000000000000e0       0x78 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_ranges  0x0000000000000158       0x20 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
+ .debug_ranges  0x0000000000000088       0x78 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_ranges  0x0000000000000100       0x20 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_ranges  0x0000000000000120       0x58 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .debug_ranges  0x0000000000000178       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
  .debug_ranges  0x0000000000000188       0x10 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
  .debug_ranges  0x0000000000000198       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
@@ -5123,176 +5131,176 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/l
  .debug_ranges  0x0000000000002238       0x50 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
  .debug_ranges  0x0000000000002288      0x100 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 
-.debug_line     0x0000000000000000    0x285ef
+.debug_line     0x0000000000000000    0x2860a
  .debug_line    0x0000000000000000      0x317 CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
- .debug_line    0x0000000000000317      0x193 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
- .debug_line    0x00000000000004aa      0x46c CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
- .debug_line    0x0000000000000916      0x1d7 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
- .debug_line    0x0000000000000aed      0x486 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_line    0x0000000000000f73      0x633 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_line    0x00000000000015a6      0x1a1 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
- .debug_line    0x0000000000001747      0x1f4 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
- .debug_line    0x000000000000193b      0x21f CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
- .debug_line    0x0000000000001b5a      0x393 CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
- .debug_line    0x0000000000001eed      0x373 CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
- .debug_line    0x0000000000002260      0x33f CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
- .debug_line    0x000000000000259f      0x1a7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
- .debug_line    0x0000000000002746      0x2b8 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
- .debug_line    0x00000000000029fe      0x24b CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
- .debug_line    0x0000000000002c49      0x54e CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
- .debug_line    0x0000000000003197      0x35a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
- .debug_line    0x00000000000034f1      0x1ba CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
- .debug_line    0x00000000000036ab      0x2f0 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
- .debug_line    0x000000000000399b      0x3e7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
- .debug_line    0x0000000000003d82      0x3cd CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
- .debug_line    0x000000000000414f      0x181 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
- .debug_line    0x00000000000042d0      0x274 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
- .debug_line    0x0000000000004544      0x36a CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
- .debug_line    0x00000000000048ae      0x3bd CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
- .debug_line    0x0000000000004c6b       0xa7 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
- .debug_line    0x0000000000004d12      0x5e3 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
- .debug_line    0x00000000000052f5     0x10e4 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
- .debug_line    0x00000000000063d9      0xc88 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
- .debug_line    0x0000000000007061     0x1123 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
- .debug_line    0x0000000000008184      0x7be CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
- .debug_line    0x0000000000008942      0xe49 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
- .debug_line    0x000000000000978b      0x71a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
- .debug_line    0x0000000000009ea5     0x1580 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
- .debug_line    0x000000000000b425      0x2d9 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
- .debug_line    0x000000000000b6fe      0xb33 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
- .debug_line    0x000000000000c231     0x250d CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
- .debug_line    0x000000000000e73e     0x4ac6 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
- .debug_line    0x0000000000013204     0x1cea CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
- .debug_line    0x0000000000014eee     0x4634 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
- .debug_line    0x0000000000019522     0x1e78 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
- .debug_line    0x000000000001b39a      0xa82 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
- .debug_line    0x000000000001be1c      0x9cc CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
- .debug_line    0x000000000001c7e8      0xd43 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
- .debug_line    0x000000000001d52b      0x2ac CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
- .debug_line    0x000000000001d7d7     0x2a81 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
- .debug_line    0x0000000000020258      0x37d CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
- .debug_line    0x00000000000205d5      0x72e CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
- .debug_line    0x0000000000020d03      0x735 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
- .debug_line    0x0000000000021438     0x204d CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
- .debug_line    0x0000000000023485     0x3059 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
- .debug_line    0x00000000000264de      0xf23 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
- .debug_line    0x0000000000027401      0x253 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
- .debug_line    0x0000000000027654      0x3bd CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
- .debug_line    0x0000000000027a11      0x35f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
- .debug_line    0x0000000000027d70      0x87f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_line    0x0000000000000317      0x1a1 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
+ .debug_line    0x00000000000004b8      0x46c CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
+ .debug_line    0x0000000000000924      0x1d7 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+ .debug_line    0x0000000000000afb      0x641 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_line    0x000000000000113c      0x1af CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_line    0x00000000000012eb      0x44d CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+ .debug_line    0x0000000000001738      0x1f4 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
+ .debug_line    0x000000000000192c      0x21f CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
+ .debug_line    0x0000000000001b4b      0x393 CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
+ .debug_line    0x0000000000001ede      0x373 CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
+ .debug_line    0x0000000000002251      0x33f CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
+ .debug_line    0x0000000000002590      0x1a7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
+ .debug_line    0x0000000000002737      0x2c6 CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
+ .debug_line    0x00000000000029fd      0x24b CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
+ .debug_line    0x0000000000002c48      0x55c CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
+ .debug_line    0x00000000000031a4      0x35a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
+ .debug_line    0x00000000000034fe      0x1ba CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_line    0x00000000000036b8      0x2f0 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_line    0x00000000000039a8      0x3e7 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_line    0x0000000000003d8f      0x3cd CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
+ .debug_line    0x000000000000415c      0x181 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
+ .debug_line    0x00000000000042dd      0x274 CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_line    0x0000000000004551      0x36a CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
+ .debug_line    0x00000000000048bb      0x3bd CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
+ .debug_line    0x0000000000004c78       0xa7 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
+ .debug_line    0x0000000000004d1f      0x5e3 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_line    0x0000000000005302     0x10e4 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_line    0x00000000000063e6      0xc88 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+ .debug_line    0x000000000000706e     0x1123 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_line    0x0000000000008191      0x7be CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_line    0x000000000000894f      0xe49 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_line    0x0000000000009798      0x71a CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_line    0x0000000000009eb2     0x1580 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+ .debug_line    0x000000000000b432      0x2d9 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+ .debug_line    0x000000000000b70b      0xb33 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_line    0x000000000000c23e     0x250d CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_line    0x000000000000e74b     0x4ac6 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_line    0x0000000000013211     0x1cea CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_line    0x0000000000014efb     0x4634 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_line    0x000000000001952f     0x1e78 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_line    0x000000000001b3a7      0xa82 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_line    0x000000000001be29      0x9cc CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_line    0x000000000001c7f5      0xd43 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_line    0x000000000001d538      0x2ac CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_line    0x000000000001d7e4     0x2a81 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_line    0x0000000000020265      0x37d CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_line    0x00000000000205e2      0x72e CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_line    0x0000000000020d10      0x735 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_line    0x0000000000021445     0x204d CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_line    0x0000000000023492     0x3059 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_line    0x00000000000264eb      0xf23 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_line    0x000000000002740e      0x253 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_line    0x0000000000027661      0x3cb CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_line    0x0000000000027a2c      0x35f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_line    0x0000000000027d8b      0x87f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
 
-.debug_str      0x0000000000000000     0xb962
+.debug_str      0x0000000000000000     0xb984
  .debug_str     0x0000000000000000      0x620 CMakeFiles/RM_Board_A.elf.dir/Application/Src/CAN_receive.c.obj
                                         0x6c0 (size before relaxing)
- .debug_str     0x0000000000000620      0x155 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
-                                        0x33f (size before relaxing)
- .debug_str     0x0000000000000775      0x4b3 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
+ .debug_str     0x0000000000000620      0x15b CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
+                                        0x345 (size before relaxing)
+ .debug_str     0x000000000000077b      0x4b3 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
                                         0x708 (size before relaxing)
- .debug_str     0x0000000000000c28      0x165 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+ .debug_str     0x0000000000000c2e      0x165 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
                                         0x377 (size before relaxing)
- .debug_str     0x0000000000000d8d      0x241 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
-                                        0x500 (size before relaxing)
- .debug_str     0x0000000000000fce      0x340 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
-                                        0x88f (size before relaxing)
- .debug_str     0x000000000000130e       0x8c CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
-                                        0x249 (size before relaxing)
- .debug_str     0x000000000000139a      0x12c CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
+ .debug_str     0x0000000000000d93      0x38a CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+                                        0x89d (size before relaxing)
+ .debug_str     0x000000000000111d       0x9f CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+                                        0x257 (size before relaxing)
+ .debug_str     0x00000000000011bc      0x200 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
+                                        0x51e (size before relaxing)
+ .debug_str     0x00000000000013bc      0x12c CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
                                         0x596 (size before relaxing)
- .debug_str     0x00000000000014c6       0x4b CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
+ .debug_str     0x00000000000014e8       0x4b CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
                                         0x65a (size before relaxing)
- .debug_str     0x0000000000001511       0xdd CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
+ .debug_str     0x0000000000001533       0xdd CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
                                         0x353 (size before relaxing)
- .debug_str     0x00000000000015ee      0x8b2 CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
+ .debug_str     0x0000000000001610      0x8b2 CMakeFiles/RM_Board_A.elf.dir/Core/Src/adc.c.obj
                                         0xdaa (size before relaxing)
- .debug_str     0x0000000000001ea0       0x77 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
+ .debug_str     0x0000000000001ec2       0x77 CMakeFiles/RM_Board_A.elf.dir/Core/Src/can.c.obj
                                         0xbfa (size before relaxing)
- .debug_str     0x0000000000001f17       0x3d CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
+ .debug_str     0x0000000000001f39       0x3d CMakeFiles/RM_Board_A.elf.dir/Core/Src/dma.c.obj
                                         0x868 (size before relaxing)
- .debug_str     0x0000000000001f54      0x5bd CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
+ .debug_str     0x0000000000001f76      0x5bd CMakeFiles/RM_Board_A.elf.dir/Core/Src/freertos.c.obj
                                         0x92e (size before relaxing)
- .debug_str     0x0000000000002511       0x3f CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
+ .debug_str     0x0000000000002533       0x3f CMakeFiles/RM_Board_A.elf.dir/Core/Src/gpio.c.obj
                                         0x3c4 (size before relaxing)
- .debug_str     0x0000000000002550      0x4db CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
+ .debug_str     0x0000000000002572      0x4db CMakeFiles/RM_Board_A.elf.dir/Core/Src/main.c.obj
                                         0xb7d (size before relaxing)
- .debug_str     0x0000000000002a2b       0x6a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
+ .debug_str     0x0000000000002a4d       0x6a CMakeFiles/RM_Board_A.elf.dir/Core/Src/spi.c.obj
                                         0x84d (size before relaxing)
- .debug_str     0x0000000000002a95       0x4b CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
+ .debug_str     0x0000000000002ab7       0x4b CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_msp.c.obj
                                         0x863 (size before relaxing)
- .debug_str     0x0000000000002ae0      0x128 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
+ .debug_str     0x0000000000002b02      0x128 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_hal_timebase_tim.c.obj
                                         0xef7 (size before relaxing)
- .debug_str     0x0000000000002c08      0x4d3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
+ .debug_str     0x0000000000002c2a      0x4d3 CMakeFiles/RM_Board_A.elf.dir/Core/Src/stm32f4xx_it.c.obj
                                        0x100f (size before relaxing)
- .debug_str     0x00000000000030db      0x22a CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
+ .debug_str     0x00000000000030fd      0x22a CMakeFiles/RM_Board_A.elf.dir/Core/Src/syscalls.c.obj
                                         0x43e (size before relaxing)
- .debug_str     0x0000000000003305       0x94 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
+ .debug_str     0x0000000000003327       0x94 CMakeFiles/RM_Board_A.elf.dir/Core/Src/sysmem.c.obj
                                         0x26a (size before relaxing)
- .debug_str     0x0000000000003399       0xfa CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
+ .debug_str     0x00000000000033bb       0xfa CMakeFiles/RM_Board_A.elf.dir/Core/Src/system_stm32f4xx.c.obj
                                         0x3cd (size before relaxing)
- .debug_str     0x0000000000003493      0x17f CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
+ .debug_str     0x00000000000034b5      0x17f CMakeFiles/RM_Board_A.elf.dir/Core/Src/tim.c.obj
                                         0xa73 (size before relaxing)
- .debug_str     0x0000000000003612       0x8c CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
+ .debug_str     0x0000000000003634       0x8c CMakeFiles/RM_Board_A.elf.dir/Core/Src/usart.c.obj
                                         0xdf6 (size before relaxing)
- .debug_str     0x000000000000369e       0x55 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
+ .debug_str     0x00000000000036c0       0x55 CMakeFiles/RM_Board_A.elf.dir/Core/Startup/startup_stm32f427iihx.s.obj
                                          0x89 (size before relaxing)
- .debug_str     0x00000000000036f3      0x33d CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
+ .debug_str     0x0000000000003715      0x33d CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c.obj
                                         0xc3a (size before relaxing)
- .debug_str     0x0000000000003a30      0x2d6 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
+ .debug_str     0x0000000000003a52      0x2d6 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc.c.obj
                                         0x9a7 (size before relaxing)
- .debug_str     0x0000000000003d06      0x2fe CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
+ .debug_str     0x0000000000003d28      0x2fe CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_adc_ex.c.obj
                                         0x9fb (size before relaxing)
- .debug_str     0x0000000000004004      0x3d4 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
+ .debug_str     0x0000000000004026      0x3d4 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_can.c.obj
                                         0xa90 (size before relaxing)
- .debug_str     0x00000000000043d8      0x43c CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
+ .debug_str     0x00000000000043fa      0x43c CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c.obj
                                         0xcbe (size before relaxing)
- .debug_str     0x0000000000004814      0x2cd CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
+ .debug_str     0x0000000000004836      0x2cd CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c.obj
                                         0x7bb (size before relaxing)
- .debug_str     0x0000000000004ae1      0x12f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
+ .debug_str     0x0000000000004b03      0x12f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c.obj
                                         0x538 (size before relaxing)
- .debug_str     0x0000000000004c10      0x818 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
+ .debug_str     0x0000000000004c32      0x818 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd.c.obj
                                         0xe07 (size before relaxing)
- .debug_str     0x0000000000005428      0x16f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
+ .debug_str     0x000000000000544a      0x16f CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pcd_ex.c.obj
                                         0x76b (size before relaxing)
- .debug_str     0x0000000000005597      0x150 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
+ .debug_str     0x00000000000055b9      0x150 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c.obj
                                         0x75e (size before relaxing)
- .debug_str     0x00000000000056e7      0x52b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
+ .debug_str     0x0000000000005709      0x52b CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c.obj
                                         0xc3f (size before relaxing)
- .debug_str     0x0000000000005c12      0xd99 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
+ .debug_str     0x0000000000005c34      0xd99 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim.c.obj
                                        0x16fe (size before relaxing)
- .debug_str     0x00000000000069ab      0x5b3 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
+ .debug_str     0x00000000000069cd      0x5b3 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_tim_ex.c.obj
                                         0xeff (size before relaxing)
- .debug_str     0x0000000000006f5e      0x607 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
+ .debug_str     0x0000000000006f80      0x607 CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_uart.c.obj
                                         0xd9e (size before relaxing)
- .debug_str     0x0000000000007565      0x46e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
+ .debug_str     0x0000000000007587      0x46e CMakeFiles/RM_Board_A.elf.dir/Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_ll_usb.c.obj
                                         0xce4 (size before relaxing)
- .debug_str     0x00000000000079d3      0x72d CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
+ .debug_str     0x00000000000079f5      0x72d CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Class/CDC/Src/usbd_cdc.c.obj
                                         0xdb8 (size before relaxing)
- .debug_str     0x0000000000008100      0x387 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
+ .debug_str     0x0000000000008122      0x387 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_core.c.obj
                                         0xa1c (size before relaxing)
- .debug_str     0x0000000000008487      0x158 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
+ .debug_str     0x00000000000084a9      0x158 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ctlreq.c.obj
                                         0x847 (size before relaxing)
- .debug_str     0x00000000000085df       0x70 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
+ .debug_str     0x0000000000008601       0x70 CMakeFiles/RM_Board_A.elf.dir/Middlewares/ST/STM32_USB_Device_Library/Core/Src/usbd_ioreq.c.obj
                                         0x71c (size before relaxing)
- .debug_str     0x000000000000864f     0x1445 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
+ .debug_str     0x0000000000008671     0x1445 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2/cmsis_os2.c.obj
                                        0x21f0 (size before relaxing)
- .debug_str     0x0000000000009a94      0x158 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
+ .debug_str     0x0000000000009ab6      0x158 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/list.c.obj
                                         0x347 (size before relaxing)
- .debug_str     0x0000000000009bec      0x24c CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
+ .debug_str     0x0000000000009c0e      0x24c CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM4F/port.c.obj
                                         0x4c7 (size before relaxing)
- .debug_str     0x0000000000009e38      0x2ea CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
+ .debug_str     0x0000000000009e5a      0x2ea CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/portable/MemMang/heap_4.c.obj
                                         0x555 (size before relaxing)
- .debug_str     0x000000000000a122      0x638 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
+ .debug_str     0x000000000000a144      0x638 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/queue.c.obj
                                         0xd5d (size before relaxing)
- .debug_str     0x000000000000a75a      0x99a CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
+ .debug_str     0x000000000000a77c      0x99a CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/tasks.c.obj
                                        0x1418 (size before relaxing)
- .debug_str     0x000000000000b0f4      0x501 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
+ .debug_str     0x000000000000b116      0x501 CMakeFiles/RM_Board_A.elf.dir/Middlewares/Third_Party/FreeRTOS/Source/timers.c.obj
                                         0xc97 (size before relaxing)
- .debug_str     0x000000000000b5f5       0x6a CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
+ .debug_str     0x000000000000b617       0x6a CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usb_device.c.obj
                                         0x6f7 (size before relaxing)
- .debug_str     0x000000000000b65f       0xed CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
+ .debug_str     0x000000000000b681       0xed CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_cdc_if.c.obj
                                         0x8ec (size before relaxing)
- .debug_str     0x000000000000b74c      0x18f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
+ .debug_str     0x000000000000b76e      0x18f CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/App/usbd_desc.c.obj
                                         0x4a3 (size before relaxing)
- .debug_str     0x000000000000b8db       0x87 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
+ .debug_str     0x000000000000b8fd       0x87 CMakeFiles/RM_Board_A.elf.dir/USB_DEVICE/Target/usbd_conf.c.obj
                                        0x1652 (size before relaxing)
 
 .comment        0x0000000000000000       0x49
@@ -5301,9 +5309,9 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/l
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
+ .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
  .comment       0x0000000000000049       0x4a CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj
@@ -5358,9 +5366,9 @@ LOAD /Applications/ARM/bin/../lib/gcc/arm-none-eabi/10.3.1/thumb/v7e-m+fp/hard/l
  .debug_frame   0x000000000000006c       0x40 CMakeFiles/RM_Board_A.elf.dir/Application/Src/GLOBAL_status.c.obj
  .debug_frame   0x00000000000000ac       0x78 CMakeFiles/RM_Board_A.elf.dir/Application/Src/remote_control.c.obj
  .debug_frame   0x0000000000000124       0x78 CMakeFiles/RM_Board_A.elf.dir/Application/Src/user_pid.c.obj
- .debug_frame   0x000000000000019c       0xd8 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
- .debug_frame   0x0000000000000274      0x1b8 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/st7735.c.obj
- .debug_frame   0x000000000000042c       0x70 CMakeFiles/RM_Board_A.elf.dir/Bsp/ST7735/support.c.obj
+ .debug_frame   0x000000000000019c      0x1b8 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/st7735.c.obj
+ .debug_frame   0x0000000000000354       0x70 CMakeFiles/RM_Board_A.elf.dir/Bsp/BoardOLED_substitute/support.c.obj
+ .debug_frame   0x00000000000003c4       0xd8 CMakeFiles/RM_Board_A.elf.dir/Bsp/LEDs_onboard/LEDs_onboard.c.obj
  .debug_frame   0x000000000000049c       0x30 CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_can.c.obj
  .debug_frame   0x00000000000004cc       0x2c CMakeFiles/RM_Board_A.elf.dir/Bsp/bsp_rc.c.obj
  .debug_frame   0x00000000000004f8       0x6c CMakeFiles/RM_Board_A.elf.dir/Bsp/pid.c.obj

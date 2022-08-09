@@ -262,6 +262,7 @@ static int8_t CDC_Control_FS(uint8_t cmd, uint8_t* pbuf, uint16_t length)
 static int8_t CDC_Receive_FS(uint8_t* Buf, uint32_t *Len)
 {
   /* USER CODE BEGIN 6 */
+  //todo: shell command interface
     Fused_LEDs_IO.WriteWaterfulNum(*Buf-'0');
 //    usb_printf("[SYSTEM] Board temperature: %f \r\n", get_temprate() );
 //    CDC_Transmit_FS(Buf, *Len);
