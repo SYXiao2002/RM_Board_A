@@ -9,8 +9,7 @@
 #define LEDs_onboard_GPIO_Port GPIOG
 #define LEDs_onboard_NUM 8                      //the number of all diodes onboard
 #define ShowWaterful_INTERVAL 400               //the time interval
-#define LEDs_Ok 0
-#define LEDs_Error 1
+
 
 static void LEDs_onboard_Init();
 static uint8_t LEDs_onboard_WriteODR(uint8_t Reg_ODR);
@@ -59,12 +58,12 @@ uint8_t LEDs_onboard_WriteODR(uint8_t Reg_ODR){
 
 uint8_t LEDs_onboard_WriteWaterfulNum(uint8_t number){
 	if(number > LEDs_onboard_NUM || number < 1){
-		usb_printf("[WARNING] Waterful Number should between 1 and 8\r\n");
+//		usb_printf("[WARNING] The range of Waterful_Number is [1, 8]. You just entered: %d.\r\n", number);
 		return LEDs_Error;
 	}
 
 	Fused_LEDs_IO.WaterfulNum = number;
-	usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", Fused_LEDs_IO.WaterfulNum);
+//	usb_printf("[SUCCEED] Enlighten %d LEDs!\r\n", Fused_LEDs_IO.WaterfulNum);
 
 	//erase the flash initially
 	flash_erase_address(USER_FLASH_ADDRESS, 1);

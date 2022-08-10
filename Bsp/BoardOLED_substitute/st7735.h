@@ -120,7 +120,7 @@ typedef enum{
 void ST7735_Init(void);
 void ST7735_Init_Command1(void);
 void ST7735_Init_Command2(void);
-void ST7735_Display_Test(void);
+void ST7735_Display_Heart_Pulse(void);
 
 void ST7735_DrawPixel(uint16_t x, uint16_t y, ST7735_Colors_t color);
 void ST7735_DrawInt(uint16_t x, uint16_t y, uint16_t integer, ST7735_Colors_t textColor);

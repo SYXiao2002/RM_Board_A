@@ -118,7 +118,7 @@ void ST7735_Init_Command2(void)
 	ST7735_FillScreen(black);
 }
 
-void ST7735_Display_Test(void){
+void ST7735_Display_Heart_Pulse(void){
 	for (int i = 0; i < 10; ++i) {
 		ST7735_DrawInt(0, 12, i, green);
 		osDelay(20);

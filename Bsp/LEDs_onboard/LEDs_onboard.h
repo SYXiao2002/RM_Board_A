@@ -7,6 +7,8 @@
 
 #include "main.h"
 #include "bsp_flash.h"
+#define LEDs_Ok 0
+#define LEDs_Error 1
 
 typedef void (*LEDs_onboard_Init_Func)     (void);
 typedef uint8_t (*LEDs_onboard_WriteODR_Func) (uint8_t);

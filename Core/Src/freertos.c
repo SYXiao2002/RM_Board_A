@@ -191,7 +191,7 @@ void Task_OLED_Display(void *argument)
 	for(;;)
 	{
 		ST7735_DrawInt(6, 0, (uint16_t)Fused_LEDs_IO.WaterfulNum, green);
-		ST7735_Display_Test();
+		ST7735_Display_Heart_Pulse();
 	}
   /* USER CODE END Task_OLED_Display */
 }

@@ -36,6 +36,7 @@
 #include "GLOBAL_status.h"
 #include "st7735.h"
 #include "Buzzer_onboard.h"
+#include "user_CLI.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -111,6 +112,7 @@ int main(void)
 	ST7735_Init();
 
 	GLOBAL_All_Status_Init();
+	user_CLI_Init();
   /* USER CODE END 2 */
 
   /* Init scheduler */

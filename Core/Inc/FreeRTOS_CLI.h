@@ -40,8 +40,9 @@
 /* FreeRTOS includes. */
 #include "FreeRTOS.h"
 #include "task.h"
+#include "usbd_cdc_if.h"
 
-#define configCOMMAND_INT_MAX_OUTPUT_SIZE 500
+#define configCOMMAND_INT_MAX_OUTPUT_SIZE 650       //64*10
 /* The prototype to which callback functions used to process command line
 commands must comply.  pcWriteBuffer is a buffer into which the output from
 executing the command can be written, xWriteBufferLen is the length, in bytes of
@@ -87,7 +88,7 @@ BaseType_t FreeRTOS_CLIRegisterCommand( const CLI_Command_Definition_t * const p
  * pcCmdIntProcessCommand is not re-entrant.  It must not be called from more
  * than one task - or at least - by more than one task at a time.
  */
-BaseType_t FreeRTOS_CLIProcessCommand( const char * const pcCommandInput, char * pcWriteBuffer, size_t xWriteBufferLen  );
+BaseType_t FreeRTOS_CLIProcessCommand( const  char * const pcCommandInput, char * pcWriteBuffer, size_t xWriteBufferLen  );
 
 /*-----------------------------------------------------------*/
 
@@ -112,7 +113,7 @@ CLI_Definition_List_Item_t *FreeRTOS_CLIGetFirstRegisteredCommand( void );
 /*
  * Return a pointer to the xParameterNumber'th word in pcCommandString.
  */
-const char *FreeRTOS_CLIGetParameter( const char *pcCommandString, UBaseType_t uxWantedParameter, BaseType_t *pxParameterStringLength );
+const char *FreeRTOS_CLIGetParameter( const char *pcCommandString, UBaseType_t uxWantedParameter, uint8_t *pxParameterStringLength );
 
 /* *INDENT-OFF* */
 #ifdef __cplusplus

@@ -57,7 +57,7 @@ of the list of registered commands. */
 static const CLI_Command_Definition_t xHelpCommand =
 {
 	"help",
-	"\r\nhelp:\r\n Lists all the registered commands\r\n\r\n",
+	"help: Lists all the registered commands.\n",
 	prvHelpCommand,
 	0
 };
@@ -155,7 +155,10 @@ size_t xCommandStringLength;
 			a parameter. */
 			if( strncmp( pcCommandInput, pcRegisteredCommandString, xCommandStringLength ) == 0 )
 			{
-				if( ( pcCommandInput[ xCommandStringLength ] == ' ' ) || ( pcCommandInput[ xCommandStringLength ] == 0x00 ) )
+
+				if(     ( pcCommandInput[ xCommandStringLength ] == ' ' )
+					||  ( pcCommandInput[ xCommandStringLength ] == 0x00 )
+					||  ( pcCommandInput[ xCommandStringLength ] == 0x0a )  )
 				{
 					/* The command has been found.  Check it has the expected
 					number of parameters.  If cExpectedNumberOfParameters is -1,
@@ -218,28 +221,33 @@ CLI_Definition_List_Item_t *FreeRTOS_CLIGetFirstRegisteredCommand( void ){
 
 const char *FreeRTOS_CLIGetParameter( const char *pcCommandString,
                                       UBaseType_t uxWantedParameter,
-                                      BaseType_t *pxParameterStringLength ){
+                                      uint8_t *pxParameterStringLength ){
     UBaseType_t uxParametersFound = 0;
     const char *pcReturn = NULL;
 
-	*pxParameterStringLength = 0;
 
+	*pxParameterStringLength = 0;
 	while( uxParametersFound < uxWantedParameter ){
 		/* Index the character pointer past the current word.  If this is the start
 		of the command string then the first word is the command itself. */
-		while( ( ( *pcCommandString ) != 0x00 ) && ( ( *pcCommandString ) != ' ' ) )
+		while(      (*pcCommandString != 0x00 )
+				&&  (*pcCommandString != ' ' )
+				&&  (*pcCommandString != 0x0a )        )
 		{
 			pcCommandString++;
 		}
 
 		/* Find the start of the next string. */
-		while( ( ( *pcCommandString ) != 0x00 ) && ( ( *pcCommandString ) == ' ' ) )
+		while(      (*pcCommandString != 0x00 )
+				&&  (*pcCommandString == ' ' )
+				&&  (*pcCommandString != 0x0a )        )
 		{
 			pcCommandString++;
 		}
 
 		/* Was a string found? */
-		if( *pcCommandString != 0x00 )
+		if(     ( ( *pcCommandString ) != 0x00 )
+		    &&  ( ( *pcCommandString ) != 0x0a )    )
 		{
 			/* Is this the start of the required parameter? */
 			uxParametersFound++;
@@ -247,11 +255,15 @@ const char *FreeRTOS_CLIGetParameter( const char *pcCommandString,
 			if( uxParametersFound == uxWantedParameter )
 			{
 				/* How long is the parameter? */
+				uint8_t a=0;
 				pcReturn = pcCommandString;
-				while( ( ( *pcCommandString ) != 0x00 ) && ( ( *pcCommandString ) != ' ' ) )
+				while(      ( ( *pcCommandString ) != 0x00 )
+						&&  ( ( *pcCommandString ) != ' ' )
+						&&  ( ( *pcCommandString ) != 0x0a )    )
 				{
 					( *pxParameterStringLength )++;
 					pcCommandString++;
+					a++;
 				}
 
 				if( *pxParameterStringLength == 0 )
@@ -274,34 +286,25 @@ const char *FreeRTOS_CLIGetParameter( const char *pcCommandString,
 
 static BaseType_t prvHelpCommand( char *pcWriteBuffer, size_t xWriteBufferLen, const char *pcCommandString )
 {
-static const CLI_Definition_List_Item_t * pxCommand = NULL;
-BaseType_t xReturn;
+	char Notification1[]= "\n\n--------------------Command List--------------------\n";
+	char *pNotification = &Notification1[0];
+	uint8_t command_number=0;
+	uint16_t shift = 0;      //8bit, always smaller than configCOMMAND_INT_MAX_OUTPUT_SIZE 500
+	strncpy(pcWriteBuffer + shift, pNotification , strlen(pNotification));
+	shift+=strlen(pNotification);
 
-	( void ) pcCommandString;
-
-	if( pxCommand == NULL )
-	{
-		/* Reset the pxCommand pointer back to the start of the list. */
-		pxCommand = &xRegisteredCommands;
+	for(CLI_Definition_List_Item_t * pxCommand = &xRegisteredCommands; pxCommand != NULL; pxCommand = pxCommand->pxNext ) {
+		/* Return the next command help string, before moving the pointer on to
+		the next command in the list. */
+			command_number++;
+			strncpy(pcWriteBuffer + shift, pxCommand->pxCommandLineDefinition->pcHelpString,
+			        strlen(pxCommand->pxCommandLineDefinition->pcHelpString));
+			shift += strlen(pxCommand->pxCommandLineDefinition->pcHelpString);
 	}
 
-	/* Return the next command help string, before moving the pointer on to
-	the next command in the list. */
-	strncpy( pcWriteBuffer, pxCommand->pxCommandLineDefinition->pcHelpString, xWriteBufferLen );
-	pxCommand = pxCommand->pxNext;
+	sprintf(pcWriteBuffer + shift, "--------------%d commands found in total--------------\n\n", command_number);
+	return pdFALSE;
 
-	if( pxCommand == NULL )
-	{
-		/* There are no more commands in the list, so there will be no more
-		strings to return after this one and pdFALSE should be returned. */
-		xReturn = pdFALSE;
-	}
-	else
-	{
-		xReturn = pdTRUE;
-	}
-
-	return xReturn;
 }
 /*-----------------------------------------------------------*/
 
@@ -311,18 +314,14 @@ int8_t cParameters = 0;
 BaseType_t xLastCharacterWasSpace = pdFALSE;
 
 	/* Count the number of space delimited words in pcCommandString. */
-	while( *pcCommandString != 0x00 )
+	while( (*pcCommandString != 0x00) && (*pcCommandString != 0x0a))
 	{
-		if( ( *pcCommandString ) == ' ' )
-		{
-			if( xLastCharacterWasSpace != pdTRUE )
-			{
+		if( ( *pcCommandString ) == ' ' ){
+			if( xLastCharacterWasSpace != pdTRUE ){
 				cParameters++;
 				xLastCharacterWasSpace = pdTRUE;
 			}
-		}
-		else
-		{
+		}else{
 			xLastCharacterWasSpace = pdFALSE;
 		}
 
