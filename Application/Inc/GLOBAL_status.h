@@ -8,11 +8,11 @@
  * This file stores the global variables in this XJTLU_Torpedo project.
  */
 #include "LEDs_onboard.h"
+#include "st7735.h"
+
 void GLOBAL_All_Status_Init();
 
 
 
 
-
-static uint8_t get_LEDs_ODR();
 #endif //RM_BOARD_A_GLOBAL_STATUS_H

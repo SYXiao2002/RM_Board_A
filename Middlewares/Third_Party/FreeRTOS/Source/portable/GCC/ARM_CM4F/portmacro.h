@@ -54,7 +54,7 @@ extern "C" {
 
 typedef portSTACK_TYPE StackType_t;
 typedef long BaseType_t;
-typedef unsigned long UBaseType_t;
+typedef unsigned long UBaseType_t;      //32-bit
 
 #if( configUSE_16_BIT_TICKS == 1 )
 	typedef uint16_t TickType_t;
