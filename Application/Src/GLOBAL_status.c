@@ -6,7 +6,7 @@
 static void GLOBAL_OLED_Para_Display_Init();
 
 void GLOBAL_All_Status_Init(){
-//	GLOBAL_OLED_Para_Display_Init();
+	GLOBAL_OLED_Para_Display_Init();
 
 	Fused_LEDs_IO.Init();
 }

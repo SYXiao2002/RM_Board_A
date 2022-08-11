@@ -3,13 +3,13 @@
 //
 
 #include "user_CLI.h"
-#include "task.h"
-#include <math.h>
 static CLI_Command_Definition_t setLEDsWaterfulNumCommand;
+static CLI_Command_Definition_t showSTM32F4ChipTempCommand;
 
 
 void user_CLI_Init(){
 	FreeRTOS_CLIRegisterCommand(&setLEDsWaterfulNumCommand);
+	FreeRTOS_CLIRegisterCommand(&showSTM32F4ChipTempCommand);
 }
 
 static BaseType_t prvSetLEDsWaterfulNumCommand ( char *pcWriteBuffer, size_t xWriteBufferLen, const char *pcCommandString )
@@ -31,9 +31,22 @@ const char *pxPara1 = FreeRTOS_CLIGetParameter( pcCommandString, 1, pxPara1Strin
 
 static CLI_Command_Definition_t setLEDsWaterfulNumCommand = {
 		"setLEDsWaterfulNum",
-		"setLEDsWaterfulNum: range in 1 and 8.\n",
+		"setLEDsWaterfulNum: [PARA1 {ranged in 1 and 8}].\n",
 		prvSetLEDsWaterfulNumCommand,
 		1,
+};
+
+static BaseType_t prvShowSTM32F4ChipTempCommand ( char *pcWriteBuffer, size_t xWriteBufferLen, const char *pcCommandString )
+{
+	sprintf(pcWriteBuffer, "[STM32F427IIHX] The chip temperature is %4.1f °C.\n", get_temprate());
+	return pdFALSE;
+}
+
+static CLI_Command_Definition_t showSTM32F4ChipTempCommand = {
+		"showSTM32F4ChipTemp",
+		"showSTM32F4ChipTemp: [NO PARA].\n",
+		prvShowSTM32F4ChipTempCommand,
+		0,
 };
 
 
