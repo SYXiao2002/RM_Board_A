@@ -36,7 +36,9 @@ static CLI_Command_Definition_t setLEDsWaterfulNumCommand = {
 		1,
 };
 
-static BaseType_t prvShowSTM32F4ChipTempCommand ( char *pcWriteBuffer, size_t xWriteBufferLen, const char *pcCommandString )
+static BaseType_t prvShowSTM32F4ChipTempCommand ( char *pcWriteBuffer,
+												  size_t xWriteBufferLen,
+												  const char *pcCommandString )
 {
 	sprintf(pcWriteBuffer, "[STM32F427IIHX] The chip temperature is %4.1f °C.\n", get_temprate());
 	return pdFALSE;
